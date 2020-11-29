@@ -28,11 +28,11 @@ vars:
 modules:
   activate:
   - intro
-  - use-case-overview
+  # - use-case-overview
   - components-overview
-  - cloud-installation
+  # - cloud-installation
   # - cloud-installation-continued. # Removed. More time can be spent on PAM features; An operator lab can be added later.
   #- verifying-installation
-  - accessing-pam
-  - authentication-authorization
+  # - accessing-pam
+  # - authentication-authorization
   - finish
