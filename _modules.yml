@@ -4,10 +4,10 @@ config:
 modules:
   intro:
     name: Introduction and Working Environment
-  use-case-overview:
-    name: Use Case Introduction
   components-overview:
     name: RHPAM Components and Architecture
+  use-case-overview:
+    name: Use Case Introduction
   cloud-installation:
     name: Cloud Environment
   # Removed temporarily until operator module is complete
