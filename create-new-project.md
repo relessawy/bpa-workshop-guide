@@ -11,6 +11,7 @@ To define and deploy a business process, we first need to create a new project i
 - Once you login to **Business Central**, you are greeted with 4 groups of functionalities as shown in the following screen
 - Right now we want to start designing our process, so click on **Design** to navigate to the **Design perspective**
 
+![Business Central]({% image_path m1p5i1_businesscentral.png %}){:width="600px”}
 
 ## Login on OpenShift
 
