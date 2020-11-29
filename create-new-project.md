@@ -32,7 +32,11 @@ To define and deploy a business process, we first need to create a new project i
     
 ![AddProject]({% image_path m1p5i5_AddProjectDialog.png %}){:width="600px”}
 
-![AddProject]({% image_path m0_info.png %}){:width="100px” align="left"}  It is a common practice to link the words that make up a project name with
 
+![AddProject]({% image_path m0_infosign.svg %}){:style="float: left"}  It is a common practice to link the words that make up a project name with
 
+- An empty Assets view is displayed for the project
+- Note the buttons in the middle of the page, these allow you to add or import assets to the project. We will start adding assets in the next section of the workshop.
+
+![AddAsset]({% image_path m1p5i6_AddAsset.png %}){:width="600px”}
 
