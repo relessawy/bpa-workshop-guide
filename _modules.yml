@@ -10,8 +10,8 @@ modules:
     name: Introduction to BPMN and DMN
   use-case-overview:
     name: Use Case Introduction
-  cloud-installation:
-    name: Cloud Environment
+  create-new-project:
+    name: Create New Project
   # Removed temporarily until operator module is complete
   # cloud-installation-continued:
   #   name: Cloud installation continued
