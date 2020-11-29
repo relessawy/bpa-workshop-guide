@@ -64,8 +64,4 @@ RHPAM can be architected in some different ways, this is a represention of one o
 
 ![RHPAM 7 Architecture]({% image_path rhpam-7-architecture.png %}){:width="600px"}
 
-----
 
-**About the environment in this Workshop**
-
-Because a critical capability of a digitally enabled product is to be available as a service, we are going to leverage  OpenShift Container Platform as a self-service console where you can choose the different tools needed depending on your skills, LOB and solution. Let's see how PAM behaves within OpenShift.
