@@ -2,10 +2,8 @@
 
 Welcome to the first module of the Red Hat Process Automation Manager (RHPAM) workshop. During this module, you will have an overview of:
 
-- The business use case you will solve with Red Hat Process Automation Manager;
 - Red Hat Process Automation Manager 7 architecture components;
-- Red Hat Process Automation Manager 7 on top of OpenShift Container Platform 4 (OCP);
-- Users and security configurations;
+- The business use case you will solve with Red Hat Process Automation Manager;
 
 We will inform the access details for each environment later on as we get to the hands-on exercises. Let's start by first understanding the use case we will solve.
 
