@@ -1,4 +1,4 @@
-# Create a new project (10 mins)
+# Create a new project (5 mins)
 
 To define and deploy a business process, we first need to create a new project in which we can store all the project assets. Assets like the data model, processes, rules and the forms required for user interaction. Projects allow multiple users to collaborate and work together on the same assets while controlling the level of access for each user.
 
