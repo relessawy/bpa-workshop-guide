@@ -33,7 +33,8 @@ To define and deploy a business process, we first need to create a new project i
 ![AddProject]({% image_path m1p5i5_AddProjectDialog.png %}){:width="600px”}
 
 
-| First Header  | Second Header |
+| ![Business Central]({% image_path m0_info.png %}){:width="600px”}  | 
+It is a common practice to link the words that make up a project name with hyphens, as done in this case. This is preferred to using spaces, because using spaces results in file names with spaces in them|
 | ------------- | ------------- |
 
 ## Login on OpenShift
