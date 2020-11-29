@@ -1,40 +1,11 @@
-#  Business Central Security
+#  Data Modelling (15 mins)
 
-So far you received access to the OpenShift where your PAM environment is available. Now we will access PAM workbench known as Business Central.
+With the project created, we can now start building our solution starting with the data model to be used in our process and rules. Each process creates, and manipulates data. This data is defined by process variables stored within the process. In Process Automation Manager, these process variables can be either pre-defined types, like String, Date, Boolean … etc, or you can create new data objects for your project. 
 
-Business Central has authoring, management and monitoring capabilities both for developers as well as subject domain experts.
+In this workshop, we will create a new data object to capture the order information.
 
-![Collaboration Tools]({% image_path collaboration_tools.png %}){:width="600px"}
+In your project, click on the Add Asset button in the middle of the screen.
+In the drop-down menu in the upper-left corner, select Model. 
 
-Let's start by accessing your business central.
 
-## Accessing Business Central
-
-_Jump to step 2 if you're already logged into OpenShift._
-
-1. [Go to your Openshift console](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.  If you're not yet logged in, or have been logged out, login using the same credentials as before:
-
-- user: `userX`{{copy}}
-- password: `openshift`{{copy}}
-
-![OpenShift Console]({% image_path openshift-console.png %}){:width="600px"}
-
-2. Make sure you are on the `Developer` perspective. On the left menu, select the `Topology` option and check if you have the `rhpam-userX` project selected. .
-
-3. You will see listed the 3 components: `rhpam7-rhpamcentr`, the `rhpam7-kieserver` and `react-web-app`.
-At this point we are interested on the authoring environment. From this page, you can already find a link to open Business Central:
-
-![PAM Project]({% image_path topology-details.png %}){:width="600px"}
-
-4. Click on the link for `rhpam7-rhpamcentr` (4 Step on image above). That link is the external OpenShift route that allows us to access Business Central. A new tab should open with Business Central login page.
-
-5. You can login in Business Central with the following credentials:
-
- - user: `pamAdmin`{{copy}}
- - password: `redhatpam1!`{{copy}}
-
-![Business Central Console]({% image_path business-central-console.png %}){:width="600px"}
-
-If you can see the page above, this means you could access the working environment where users can author and test their Business Applications.
-
-Let's head over to have an overview about how user authentication and authorization works within Business Central.
+![AddProject]({% image_path m1p6i1_AddModelMenu.png %}) ![AddProject]({% image_path m1p6i2_DataObjectTile.png %})
