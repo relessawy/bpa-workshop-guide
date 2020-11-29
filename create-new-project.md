@@ -32,7 +32,7 @@ To define and deploy a business process, we first need to create a new project i
     
 ![AddProject]({% image_path m1p5i5_AddProjectDialog.png %}){:width="600px”}
 
-![AddProject]({% image_path m1p5i5_AddProjectDialog.png %}){:width="100px” align="left"}  It is a common practice to link the words that make up a project name with
+![AddProject]({% image_path m0_info.png %}){:width="100px” align="left"}  It is a common practice to link the words that make up a project name with
 
 
 
