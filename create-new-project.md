@@ -1,13 +1,16 @@
-# Accessing your work environment
+# Create a new project (10 mins)
 
-The cloud native OpenShift environment has already been provisioned for you. You can access it either via a terminal command line (for example if you're an IT professional) or via a web-based console. In this Workshop you will have your own OpenShift namespace to work.
+To define and deploy a business process, we first need to create a new project in which we can store all the assets we are about to create. Assets like the data model, processes, rules and the forms required for user interaction. Projects allow multiple users to collaborate and work together on the same assets while controlling the level of access for each user.
 
-## Environment Details
+## To create a new project
 
-1. This is the link to access [Red Hat Openshift Container Platform]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
-2. The instructor should also assign to you a unique user number, which you will use from now on to access your OCP environment.
-    - OpenShift Console username: userX (i.e. user1)
-    - OpenShift Console password: openshift
+- Navigate to **Business Central** (URL provided by your instructor)
+- Login using the following credentials
+    - pamadmin
+    - redhat1!
+- Once you login to **Business Central**, you are greeted with 4 groups of functionalities as shown in the following screen
+- Right now we want to start designing our process, so click on **Design** to navigate to the **Design perspective**
+
 
 ## Login on OpenShift
 
