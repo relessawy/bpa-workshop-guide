@@ -29,7 +29,7 @@ modules:
   activate:
   - intro
   - components-overview
-  - Introduction-to-BPMN-and-DMN
+  - introduction-to-BPMN-and-DMN
   - use-case-overview
   # - cloud-installation-continued. # Removed. More time can be spent on PAM features; An operator lab can be added later.
   #- verifying-installation
