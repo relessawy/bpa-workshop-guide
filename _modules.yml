@@ -8,16 +8,16 @@ modules:
   #   name: Use Case Introduction
   components-overview:
     name: RHPAM Components and Architecture
- #  cloud-installation:
- #    name: Cloud Environment
+  cloud-installation:
+    name: Cloud Environment
   # Removed temporarily until operator module is complete
-  # cloud-installation-continued:
-  #   name: Cloud installation continued
+  cloud-installation-continued:
+    name: Cloud installation continued
   # verifying-installation:
   #   name: Verifying the installation
-  # accessing-pam:
-  #   name: Accessing Business Central
- #  authentication-authorization:
- #    name: Business Central Security
+  accessing-pam:
+    name: Accessing Business Central
+  authentication-authorization:
+    name: Business Central Security
   finish:
     name: Conclusion
