@@ -12,15 +12,9 @@ modules:
     name: Use Case Introduction
   create-new-project:
     name: Create New Project
-  create-data-model:
-    name: Create Data Model
-  # Removed temporarily until operator module is complete
-  # cloud-installation-continued:
-  #   name: Cloud installation continued
-  # verifying-installation:
-  #   name: Verifying the installation
-  
-  authentication-authorization:
-    name: Business Central Security
+  data-modelling:
+    name: Data Modelling
+  process-modelling:
+    name: Process Modelling
   finish:
     name: Conclusion
