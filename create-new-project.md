@@ -13,6 +13,29 @@ To define and deploy a business process, we first need to create a new project i
 
 ![Business Central]({% image_path m1p5i1_businesscentral.png %}){:width="600px”}
 
+- Click on **MySpace** to enter the default space
+
+![MySpace]({% image_path m1p5i2_MySpace.png %}){:width="600px”}
+
+- You’ve entered **MySpace**, initially this is empty
+- Right now there are no projects in your space. You can either 
+    - create a new project 
+    - import an existing one
+    - or try one of the ready samples
+- Let’s go ahead and create a new project, click on the **Add Project** button
+
+![AddProject]({% image_path m1p5i3_AddProject.png %}){:width="600px”}
+
+- Fill in the project details as follows and then click the **Add** button
+    - **Name**: procurement-process
+    - **Description**: Procurement Process
+    
+![AddProject]({% image_path m1p5i5_AddProjectDialog.png %}){:width="600px”}
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+
 ## Login on OpenShift
 
 In this workshop, you can choose between two possible ways to interact with OpenShift: Web Console or Command Line.
