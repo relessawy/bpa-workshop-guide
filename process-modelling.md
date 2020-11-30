@@ -237,7 +237,7 @@ Clicking on a node/event displays a set of mini icons that you can use to config
  
 
 ---
-![Info]({% image_path m0_save.png %}){:align="left"} 
+![Save]({% image_path m0_save.png %}){:align="left"} 
 
 Remember to save your progress 
 
@@ -353,4 +353,57 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
 - Click on the **Check Manual Approval** gateway to show it’s mini icons, click on **Create Sequence Flo**w and connect the **Check Manual Approval** gateway with the **Converge Approval gateway**
 - Name the **Sequence flow** connecting the **Check Auto Approval** gateway and the **Converge Approval** gateway: **manually approved**
 
+![ManuallyAprrovedSequence]({% image_path m1p7i47_ManuallyAprrovedSequence.png %})
+
+- Select the **Check Auto Approval** gateway
+- Open the Diagram properties pane, and expand the **Implementation/Execution** section
+- Set the **Default Route** property to **Manual Approval**
+
+![CheckAutoApprovalDefaultRoute]({% image_path m1p7i48_CheckAutoApprovalDefaultRoute.png %})
+
+- Open the **Diagram properties** pane for the **auto approved**  sequence flow, and expand the **Implementation/Execution** section
+- We want to set the following condition, this path should be taken when the order is approved by the system:
+ - **Process Variable**: approved
+ - **Condition**: Is true
+
+![AutoApproveCondition]({% image_path m1p7i49_AutoApproveCondition %})
+
+
+---
+![Tip]({% image_path m0_tip.png %}){:align="left"} 
+
+It may seem counterintuitive at first, however the conditions for these X-OR statements don't go into the details on the Gateway properties, rather the conditions are placed on the sequence flows.  If you think that you are setting a direction path, and on that direction path line you are telling the system under what conditions it should go this way, and on the other pathway under what conditions the system should go that way - thinking of it this way makes it seem intuitive.
+
+---
+
+- Similarly set the following conditions for the manually approved sequence flow:
+ - **Process Variable**: approved
+ - **Condition**: Is true
+ 
+ 
+We have now finished modeling our second scenario Manual-Approval and we will start modeling our final scenario Rejection
+
+![RejectionFlow]({% image_path m1p7i50_RejectionFlow %})
+
+###  1.3.13 Create Rejected end event
+
+- Create an **End Event** node after the **Check Manual Approval** gateway and name it **Reject**.
+- Select the **Check Manual Approve** gateway, and set it’s **Default Route** to **Reject**
+
+![RejectionEndNode]({% image_path m1p7i51_RejectionEndNode %})
+
+
+---
+![Save]({% image_path m0_save.png %}){:align="left"} 
+
+Remember to save your progress 
+
+---
+
+Your finished process diagram should like something like this
+
+
+![FinalFlow]({% image_path m1p7i52_FinalFlow %})
+
+With the overall layout of the process definition complete, the routing logic implemented, and the I/O assignments defined, we can now implement the business rules of our automated approval decision.
 
