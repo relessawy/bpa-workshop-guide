@@ -37,13 +37,13 @@ In this workshop, we will create a new data object to capture the order informat
   
 - Click the Create and Continue button to continue adding properties
 
-![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:height="400px" width="500px"}
+![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:height="600px" width="700px"}
 
 -- Continue adding the ‘Order Info’ object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
 
-![DataObjectTable]({% image_path m1p6i10_DataObjectTable.png %}){:height="400px" width="500px"}
+![DataObjectTable]({% image_path m1p6i10_DataObjectTable.png %}){:height="600px" width="700px"}
 
 
 ---
