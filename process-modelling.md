@@ -85,4 +85,24 @@ If you see something that looks like the screen below, then you will need to sel
 - Expand the **Process Data** section
 - Next click on the plus sign ‘+’ to define a new process variable
 
+![AddProcessVariable]({% image_path m1p7i12_AddProcessVariable.png %})
 
+Define a process variable as shown in the following table
+
+|      Name     |    Data Type   |  
+| ------------- | -------------- |
+|   orderInfo   |   OrderInfo    |    
+|   approved    |    Boolean     |    
+
+![ProcessVariable]({% image_path m1p7i13_ProcessVariable.png %})
+
+### 1.3.3 Create Swim Lanes
+
+- In the palette on the left-side of the editor, click on the **containers** icon then select the **Lane** component
+
+![LaneMenu]({% image_path m1p7i14_LaneMenu.png %})
+
+- To create a **Lane**, move your cursor to the canvas and click on an area to place the lane component on the canvas
+- Double click on the lane to give it the name **Supplier**
+
+![NameLane]({% image_path m1p7i15_NameLane.png %})
