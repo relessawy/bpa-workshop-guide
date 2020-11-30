@@ -37,7 +37,7 @@ In this workshop, we will create a new data object to capture the order informat
   
 - Click the Create and Continue button to continue adding properties
 
-![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:width="400px”}
+![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %})
 
 -- Continue adding the ‘Order Info’ object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
@@ -59,11 +59,11 @@ Click on the Source tab, notice that as you add fields, Red Hat Process Automati
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
 
-If you make a mistake, you can edit the fields by clicking into the field you want to modify and then the field properties will show on the right. In this case where the targetPrice was mistakenly created as a String, I can edit and change it to float as desired. 
+If you make a mistake, you can edit the fields by clicking into the field you want to modify and then the field properties will show on the right. In this case where the targetPrice was mistakenly created as a String, you can edit and change it to float as desired. 
 
 
 ![EDITFIELD]({% image_path m1p6i8_EditField.png %}){:width="600px”}
 
 ---
 
-
+- When you’ve added all the fields, save the data object by clicking on the Save button in the top menu.
