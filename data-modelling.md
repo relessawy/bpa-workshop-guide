@@ -50,3 +50,20 @@ In this workshop, we will create a new data object to capture the order informat
 | targetPrice   | Target Price   |     float     |
 | supplierPrice | Supplier Price |     float     |
 
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+Click on the Source tab, notice that as you add fields, Red Hat Process Automation Manager (RH PAM) generates the Java code on your behalf. This is an example of how RH PAM supports the developer’s persona, where a developer can collaborate with a business analyst using his/her favourite IDE to build the data model. 
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+If you make a mistake, you can edit the fields by clicking into the field you want to modify and then the field properties will show on the right. In this case where the targetPrice was mistakenly created as a String, I can edit and change it to float as desired. 
+
+
+![EDITFIELD]({% image_path m1p6i8_EditField.png %}){:width="600px”}
+
+---
+
+
