@@ -91,7 +91,7 @@ If you see something that looks like the screen below, then you will need to sel
 
 Define a process variable as shown in the following table
 
-![ProcessVariableTable]({% image_path m1p7i53_ProcessVariableTable %}) 
+![ProcessVariableTable]({% image_path m1p7i53_ProcessVariableTable.png %}){:height="400px" width="500px"} 
 
 ![ProcessVariable]({% image_path m1p7i13_ProcessVariable.png %})
 
@@ -182,12 +182,14 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 - Click the **+Add** button next to **Data Inputs and Assignments** 
 - Provide the input as follows:
 
+Request Offer Input
 ![requestOfferInput]({% image_path m1p7i26_requestOfferInput.png %})
 
 - You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. You are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
 - Now click the **+Add** button next to **Data Outputs and Assignments**
 - Like you did before provide the input as follows and then click **Save**
 
+Request Offer Output
 ![requestOfferOutput]({% image_path m1p7i27_requestOfferOutput.png %})
 
 - Your **RequestOffer Data I/O** should look something like this:
@@ -215,11 +217,11 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 ![PrepareOfferSequenceFlow]({% image_path m1p7i31_PrepareOfferSequenceFlow.png %})
 
 - With the **Prepare Offer** node selected Open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set the the attributes as follows:
- - **Task Name**: PrepareOffer
- - **Subject**: Prepare Offer for #{orderInfo.item}
- - **Actors**: pamAdmin
- - **Groups**: rest-all
- - **Assignments**: As per the following tables
+  - **Task Name**: PrepareOffer
+  - **Subject**: Prepare Offer for #{orderInfo.item}
+  - **Actors**: pamAdmin
+  - **Groups**: rest-all
+  - **Assignments**: As per the following tables
  
  **Prepare Offer Data Inputs**
  ![PrepareOfferInput]({% image_path m1p7i32_PrepareOfferInput.png %})
@@ -254,7 +256,7 @@ Remember to save your progress
 
   ![AutoApprovalFlow]({% image_path m1p7i36_AutoApprovalFlow.png %})
   
-- Open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set Rule language to DMN
+- Open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set **Rule language** to **DMN**
 - Now expand the **Data Assignments** section and provide the following assignments and then click the **Save** button
 
 **Auto Approval Data Inputs**
@@ -289,7 +291,7 @@ After we ‘ve modeled our rules, we will revisit the configuration of this node
 - In this step we want to create converging gateway to allow the path coming from the auto approval and manual approval (that we will create in scenario 2) to converge at one end event
 - Click on **Check Auto Approval** gateway to show it’s mini icons, click on the **Create Parallel** icon
 - Convert the new gateway to an Exclusive Gateway (X-OR) and name it Converge Approval
-- With the **Properties** pane open click on the **Sequence Flow** between the **Check Auto Approval** gateway and **Converge Approval** gateway, in the **Properties** pane give the Sequence Flow the name auto approved
+- With the **Properties** pane open click on the **Sequence Flow** between the **Check Auto Approval** gateway and **Converge Approval** gateway, in the **Properties** pane give the **Sequence Flow** the name **auto approved**
 
 ![CreateConvergeApprovalGW]({% image_path m1p7i40_CreateConvergeApprovalGW.png %})
 
@@ -324,11 +326,11 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
 ![ManualApprovalRequired]({% image_path m1p7i43_ManualApprovalRequired.png %})
 
 - Open the **Properties** pane for this task, and expand the **Implementation/Execution** section to provide the following properties: 
- - **Task Name**: ApproveOffer
- - **Subject**: Approve Offer of #{orderInfo.item}
- - **Actors**: pamAdmin
- - **Groups**: rest-all
- - **Assignments**: As per the following tables
+  - **Task Name**: ApproveOffer
+  - **Subject**: Approve Offer of #{orderInfo.item}
+  - **Actors**: pamAdmin
+  - **Groups**: rest-all
+  - **Assignments**: As per the following tables
 
 **Manual Approval Inputs**
 
@@ -340,14 +342,14 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
 
 ###  1.3.12 Create Check Manual Approval gateway
 
-- We now want to create another **Exclusive Gateway (X-OR)** in the **Purchasing Manager** swimlane, after the ** Manual Approval** node.
+- We now want to create another **Exclusive Gateway (X-OR)** in the **Purchasing Manager** swimlane, after the **Manual Approval** node.
 - Click on the **Manual Approval** node, and then click on the the Create Parallel mini icon
 - Hover over the settings icon under the gateway and click on **Convert into Exclusive** mini icon
 - Name the X-OR gateway: **Check Manual Approval**
 
 ![CreateCheckManualApproval]({% image_path m1p7i46_CreateCheckManualApproval.png %})
 
-- Click on the **Check Manual Approval** gateway to show it’s mini icons, click on **Create Sequence Flo**w and connect the **Check Manual Approval** gateway with the **Converge Approval gateway**
+- Click on the **Check Manual Approval** gateway to show it’s mini icons, click on **Create Sequence Flow** and connect the **Check Manual Approval** gateway with the **Converge Approval gateway**
 - Name the **Sequence flow** connecting the **Check Auto Approval** gateway and the **Converge Approval** gateway: **manually approved**
 
 ![ManuallyAprrovedSequence]({% image_path m1p7i47_ManuallyAprrovedSequence.png %})
@@ -363,7 +365,7 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
  - **Process Variable**: approved
  - **Condition**: Is true
 
-![AutoApproveCondition]({% image_path m1p7i49_AutoApproveCondition %})
+![AutoApproveCondition]({% image_path m1p7i49_AutoApproveCondition.png %})
 
 
 ---
@@ -373,21 +375,21 @@ It may seem counterintuitive at first, however the conditions for these X-OR sta
 
 ---
 
-- Similarly set the following conditions for the manually approved sequence flow:
- - **Process Variable**: approved
- - **Condition**: Is true
+- Similarly set the following conditions for the **manually approved** sequence flow:
+  - **Process Variable**: approved
+  - **Condition**: Is true
  
  
 We have now finished modeling our second scenario Manual-Approval and we will start modeling our final scenario Rejection
 
-![RejectionFlow]({% image_path m1p7i50_RejectionFlow %})
+![RejectionFlow]({% image_path m1p7i50_RejectionFlow.png %})
 
 ###  1.3.13 Create Rejected end event
 
 - Create an **End Event** node after the **Check Manual Approval** gateway and name it **Reject**.
 - Select the **Check Manual Approve** gateway, and set it’s **Default Route** to **Reject**
 
-![RejectionEndNode]({% image_path m1p7i51_RejectionEndNode %})
+![RejectionEndNode]({% image_path m1p7i51_RejectionEndNode.png %})
 
 
 ---
@@ -400,7 +402,7 @@ Remember to save your progress
 Your finished process diagram should like something like this
 
 
-![FinalFlow]({% image_path m1p7i52_FinalFlow %})
+![FinalFlow]({% image_path m1p7i52_FinalFlow.png %})
 
 With the overall layout of the process definition complete, the routing logic implemented, and the I/O assignments defined, we can now implement the business rules of our automated approval decision.
 
