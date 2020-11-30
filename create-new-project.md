@@ -42,5 +42,5 @@ It is a common practice to link the words that make up a project name with hyphe
 - An empty Assets view is displayed for the project
 - Note the buttons in the middle of the page, these allow you to add or import assets to the project. We will start adding assets in the next section of the workshop.
 
-![AddAsset]({% image_path m1p5i6_AddAsset.png %}){:width="600px”}
+![AddAsset]({% image_path m1p5i6_AddAsset.png %}){:width="600px”} 
 
