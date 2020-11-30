@@ -42,13 +42,8 @@ In this workshop, we will create a new data object to capture the order informat
 -- Continue adding the ‘Order Info’ object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
-|  Identifier   |    Label       |      Type     |
-| ------------- | -------------- | ------------- |
-|    item       |  Item Name     |     String    |
-|   supplier    | Supplier Name  |     String    |
-|   urgency     |    Urgency     |     String    |
-| targetPrice   | Target Price   |     float     |
-| supplierPrice | Supplier Price |     float     |
+
+![DataObjectTable]({% image_path m1p6i10_DataObjectTable.png %}){:width="600px”}
 
 
 ---
