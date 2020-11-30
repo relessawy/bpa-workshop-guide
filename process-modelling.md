@@ -20,4 +20,4 @@ For the remainder part of this workshop we are going to refer to Red Hat Process
 
 ![RHPAM_Scenario1]({% image_path m1p7i2_RHPAM_Scenario1.png %})
 
-** 1.3.1 Create OrderAsset process
+### 1.3.1 Create OrderAsset process
