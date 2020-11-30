@@ -7,4 +7,6 @@ In this workshop we will create a Procurement process that manages the process o
 - Depending on the urgency of the order and the price, the order can be auto-approved by a decision in the process
 - If the order can not be auto-approved, a purchasing manager needs to complete a manual approval step
 
+---
+
 ![Overview]({% image_path m1p4i1_Overview.png %}){:width="600px”}
