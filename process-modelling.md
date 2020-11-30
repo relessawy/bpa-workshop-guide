@@ -22,6 +22,8 @@ For the remainder part of this workshop we are going to refer to Red Hat Process
 
 ![RHPAM_Scenario1]({% image_path m1p7i2_RHPAM_Scenario1.png %})
 
+
+
 ### 1.3.1 Create OrderAsset process
 
 - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
@@ -96,6 +98,8 @@ Define a process variable as shown in the following table
 
 ![ProcessVariable]({% image_path m1p7i13_ProcessVariable.png %})
 
+
+
 ### 1.3.3 Create Swim Lanes
 
 - In the palette on the left-side of the editor, click on the **containers** icon then select the **Lane** component
@@ -106,3 +110,73 @@ Define a process variable as shown in the following table
 - Double click on the lane to give it the name **Supplier**
 
 ![NameLane]({% image_path m1p7i15_NameLane.png %})
+
+
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+You can resize a lane by clicking on it, and using the red dot at the bottom right.
+
+![ResizeLane]({% image_path m1p7i16_ResizeLane.png %})
+
+---
+
+- Repeat the same process again to create two more lanes:
+ - System
+ - Purchasing Manager
+ 
+- Your lanes should look like this
+
+![SwimLanes]({% image_path m1p7i17_SwimLanes.png %})
+
+
+
+### 1.3.4 Create Start Event
+
+- In the palette on the left-side of the editor, click on the **Start Events** icon then select the **Start** node
+
+![StartEventMenu]({% image_path m1p7i18_StartEventMenu.png %})
+
+- Click again inside the Purchasing Manager lane to place a start node there
+
+![StartEvent]({% image_path m1p7i19_StartEvent.png %})
+
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+Clicking on a node/event displays a set of mini icons that you can use to configure the node/event or create the next task in the process. This is another way to add nodes/events in addition to the left side menu
+
+![MiniIcons]({% image_path m1p7i20_MiniIcons.png %})
+
+---
+
+### 1.3.5 Create Request Offer user task
+
+- Click on the **Start Event** node, and click **Create Task**
+- Click on the task node again and using the configuration icon below it, convert this node into a **Usertask** by clicking on the **Convert Into User** mini icon
+- Double Click on the node to give it the name **Request Offer**
+
+![RequestOfferTask]({% image_path m1p7i21_RequestOfferTask.png %})
+
+- With the **Request Offer** node selected Open the **Properties pane** for this node, and expand the **Implementation/Execution** section
+- Set the **Task Name** to: RequestOffer
+- Set the **Subject** to: Request Offer for #{orderInfo.item}
+- Click on the **+Add** button under **Actors** and choose **pamAdmin** (your user)
+
+![pamAdmin]({% image_path m1p7i22_pamAdmin.png %})
+
+- Click on the **+Add button** under **Groups** then expand the drop down list and click on **+New** 
+- Type in the group name as **rest-all**, and then click on the check mark
+
+![restAll]({% image_path m1p7i23_restAll.png %})
+
+- Now select the new group rest-all you just created
+
+![Actors_Groups]({% image_path m1p7i24_actors_groups.png %})
+
+- The next step is to pass our process variable **orderInfo** to the **Request Offer** task (task input), this will hold the information that a user will provide in the **Request Offer** task and then return it to the process (task output) to be available for the next steps in the flow
+- Click on the pencil icon under **Assignments**
+
+![Assignments]({% image_path m1p7i25_assignments.png %})
