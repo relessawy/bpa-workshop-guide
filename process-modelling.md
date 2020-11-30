@@ -3,9 +3,9 @@
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
 - Our use case has three main scenarios
- - Auto-Approval
- - Manual-Approval
- - Rejection
+  - Auto-Approval
+  - Manual-Approval
+  - Rejection
 - Let’s start by modeling the process flow for the Auto-Approval scenario
 
 ![Scenario1]({% image_path m1p7i1_Scenario1.png %})
@@ -44,7 +44,7 @@ For the remainder part of this workshop we are going to refer to Red Hat Process
 
 Name your process **OrderAsset**, and click on the **+OK** button
 
-![AddProcessDialog]({% image_path m1p7i7_AddProcessDialog.png %})
+![AddProcessDialog]({% image_path m1p7i7_AddProcessDialog.png %}){:height="300px" width="500px"}
 
 
 ---
@@ -61,12 +61,12 @@ It is common practice to use [Pascal](https://techterms.com/definition/pascalcas
 ### 1.3.2 Define Process Variables
 
 - Our process will manipulate two variables through it’s execution
- - The **OrderInfo** data object that we created in part 1.2 of this lab.
- - A bollean variable **approved**, that will hold the result of evaluating the supplier's offer
+  - The **OrderInfo** data object that we created in part 1.2 of this lab.
+  - A bollean variable **approved**, that will hold the result of evaluating the supplier's offer
 - Open the properties editor for our process
- - Firstly click your mouse anywhere on the blank canvas of the editing screen. This will ensure you are editing the properties of the entire process rather than the variables of one element.
- - hover on top right pencil icon in designer
- - click to open the **Properties pane** on the right
+  - Firstly click your mouse anywhere on the blank canvas of the editing screen. This will ensure you are editing the properties of the entire process rather than the variables of one element.
+  - hover on top right pencil icon in designer
+  - click to open the **Properties pane** on the right
  
  ![PropertiesPane]({% image_path m1p7i9_PropertiesPane.png %})
 
@@ -91,10 +91,7 @@ If you see something that looks like the screen below, then you will need to sel
 
 Define a process variable as shown in the following table
 
-|      Name     |    Data Type   |  
-| ------------- | -------------- |
-|   orderInfo   |   OrderInfo    |    
-|   approved    |    Boolean     |    
+![ProcessVariableTable]({% image_path m1p7i53_ProcessVariableTable %}) 
 
 ![ProcessVariable]({% image_path m1p7i13_ProcessVariable.png %})
 
@@ -123,12 +120,12 @@ You can resize a lane by clicking on it, and using the red dot at the bottom rig
 ---
 
 - Repeat the same process again to create two more lanes:
- - System
- - Purchasing Manager
+  - System
+  - Purchasing Manager
  
 - Your lanes should look like this
 
-![SwimLanes]({% image_path m1p7i17_SwimLanes.png %})
+![SwimLanes]({% image_path m1p7i17_SwimLanes.png %}){:height="300px" width="500px"}
 
 
 
