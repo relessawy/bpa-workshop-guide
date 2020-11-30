@@ -1,4 +1,4 @@
-#  Data Modelling 2 (15 mins)
+#  Data Modelling (15 mins)
 
 With the project created, we can now start building our solution starting with the data model to be used in our process and rules. Each process creates, and manipulates data. This data is defined by process variables stored within the process. In **Process Automation Manager**, these process variables can be either pre-defined types, like String, Date, Boolean … etc, or you can create new data objects for your project. 
 
@@ -37,7 +37,7 @@ In this workshop, we will create a new data object to capture the order informat
   
 - Click the Create and Continue button to continue adding properties
 
-![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %})
+![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:width="100px”}
 
 -- Continue adding the ‘Order Info’ object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
@@ -67,3 +67,18 @@ If you make a mistake, you can edit the fields by clicking into the field you wa
 ---
 
 - When you’ve added all the fields, save the data object by clicking on the Save button in the top menu.
+
+![SaveDataObject]({% image_path m1p6i9_SaveDataObject.png %}){:width="600px”}
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+This has saved your changes and created a save entry called a Commit into the internal source control repository (what the developer persona will call a GIT repo) of **Red Hat Process Automation Manager**. 
+
+---
+
+- Congratulations!  You’ve just created your first asset in **Red Hat Process Automation Manager**
+- We are now ready to start with our process design, let’s get started!
+
+
+
