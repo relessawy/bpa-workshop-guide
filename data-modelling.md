@@ -43,7 +43,7 @@ In this workshop, we will create a new data object to capture the order informat
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
 
-![DataObjectTable]({% image_path m1p6i10_DataObjectTable.png %}){:width="500px”}
+![DataObjectTable]({% image_path m1p6i10_DataObjectTable.png %})
 
 
 ---
