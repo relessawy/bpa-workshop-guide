@@ -7,7 +7,7 @@ In this workshop, we will create a new data object to capture the order informat
 - In your project, click on the **Add Asset** button in the middle of the screen.
 - In the drop-down menu in the upper-left corner, select **Model**. 
 
-![AddModelMenu]({% image_path m1p6i1_AddModelMenu.png %}){:align="left"} 
+![AddModelMenu]({% image_path m1p6i1_AddModelMenu.png %})
 
 - Click on the **Data Object** tile
 
@@ -37,7 +37,7 @@ In this workshop, we will create a new data object to capture the order informat
   
 - Click the Create and Continue button to continue adding properties
 
-![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:width="600px”}
+![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:width="400px”}
 
 -- Continue adding the ‘Order Info’ object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
