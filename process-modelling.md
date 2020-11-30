@@ -1,3 +1,5 @@
+# Process Modelling (40 mins)
+
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
 - Our use case has three main scenarios
