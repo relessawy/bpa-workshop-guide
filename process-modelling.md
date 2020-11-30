@@ -180,3 +180,75 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 - Click on the pencil icon under **Assignments**
 
 ![Assignments]({% image_path m1p7i25_assignments.png %})
+
+-- This generates a pop-up: **Request Offer Data I/O** dialog
+-- Click the **+Add** button next to **Data Inputs and Assignments** 
+-- Provide the input as follows:
+
+![requestOfferInput]({% image_path m1p7i26_requestOfferInput.png %})
+
+- You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. You are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
+- Now click the **+Add** button next to **Data Outputs and Assignments**
+- Like you did before provide the input as follows and then click **Save**
+
+![requestOfferOutput]({% image_path m1p7i27_requestOfferOutput.png %})
+
+- Your RequestOffer Data I/O should look something like this:
+
+![RequestOfferAssignments]({% image_path m1p7i28_RequestOfferAssignments.png %})
+
+
+### 1.3.6 Create Prepare Offer user task
+
+- Now that the **Purchasing Manager** has requested an offer, the next step in our process is that the chosen Supplier prepares an offer
+- In the palette on the left-side of the editor, click on the **Tasks** icon then select the User task
+
+![UserTaskMenu]({% image_path m1p7i29_UserTaskMenu.png %})
+
+- Click within the **Supplier** lane to place the **User** task
+- Double click to give it the name **Prepare Offer**
+
+![PrepareOfferTas]({% image_path m1p7i30_PrepareOfferTask.png %})
+
+- Click on the **Request Offer** task and click on the mini icon **Create Sequence Flow**
+- Drag the sequence flow to connect the **Request Offer** task to the **Prepare Offer** task
+- Click on the **Sequence Flow** to create a bending point
+- Click on the bending point and drag it along tha canvas (across lanes) to shape the **Sequence Flow** as shown in the below screenshots
+
+![PrepareOfferSequenceFlow]({% image_path m1p7i31_PrepareOfferSequenceFlow.png %})
+
+- With the **Prepare Offer** node selected Open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set the the attributes as follows:
+ - **Task Name**: PrepareOffer
+ - **Subject**: Prepare Offer for #{orderInfo.item}
+ - **Actors**: pamAdmin
+ - **Groups**: rest-all
+ - **Assignments**: As per the following tables
+ 
+ Prepare Offer Data Inputs
+ ![PrepareOfferInput]({% image_path m1p7i32_PrepareOfferInput.png %})
+ 
+ Prepare Offer Data Outputs
+ ![PrepareOfferOutput]({% image_path m1p7i33_PrepareOfferOutput.png %})
+ 
+ - Your PrepareOffers propertiesshould look something like this:
+ 
+  ![PrepareOfferAssignments]({% image_path m1p7i34_PrepareOfferAssignments.png %})
+ 
+ 
+
+---
+![Info]({% image_path m0_save.png %}){:align="left"} 
+
+Remember to save your progress 
+
+---
+
+### 1.3.7 Create AutoApproval business rule task 
+
+- In this step we will create the task the calls the business rule to decide whether the order can be auto -approved or not
+- In the palette on the left-side of the editor, click on the **Tasks** icon then select the Business Rule task
+
+ ![businessRuleTaskMenu]({% image_path m1p7i35_businessRuleTaskMenu.png %})
+
+
+
