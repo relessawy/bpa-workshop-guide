@@ -181,9 +181,9 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 
 ![Assignments]({% image_path m1p7i25_assignments.png %})
 
--- This generates a pop-up: **Request Offer Data I/O** dialog
--- Click the **+Add** button next to **Data Inputs and Assignments** 
--- Provide the input as follows:
+- This generates a pop-up: **Request Offer Data I/O** dialog
+- Click the **+Add** button next to **Data Inputs and Assignments** 
+- Provide the input as follows:
 
 ![requestOfferInput]({% image_path m1p7i26_requestOfferInput.png %})
 
@@ -193,7 +193,7 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 
 ![requestOfferOutput]({% image_path m1p7i27_requestOfferOutput.png %})
 
-- Your RequestOffer Data I/O should look something like this:
+- Your **RequestOffer Data I/O** should look something like this:
 
 ![RequestOfferAssignments]({% image_path m1p7i28_RequestOfferAssignments.png %})
 
@@ -224,13 +224,13 @@ Clicking on a node/event displays a set of mini icons that you can use to config
  - **Groups**: rest-all
  - **Assignments**: As per the following tables
  
- Prepare Offer Data Inputs
+ **Prepare Offer Data Inputs**
  ![PrepareOfferInput]({% image_path m1p7i32_PrepareOfferInput.png %})
  
- Prepare Offer Data Outputs
+ **Prepare Offer Data Outputs**
  ![PrepareOfferOutput]({% image_path m1p7i33_PrepareOfferOutput.png %})
  
- - Your PrepareOffers propertiesshould look something like this:
+ - Your **Prepare Offer** properties should look something like this:
  
   ![PrepareOfferAssignments]({% image_path m1p7i34_PrepareOfferAssignments.png %})
  
@@ -250,5 +250,94 @@ Remember to save your progress
 
  ![businessRuleTaskMenu]({% image_path m1p7i35_businessRuleTaskMenu.png %})
 
+- Click within the **System** lane to place the User task
+- Double click to give it the name **Auto Approval**
+- Click on the **Prepare Offer** task and click on the mini icon **Create Sequence Flow**
+- Drag the sequence flow to connect the **Prepare Offer** task to the **Auto Approval** task and shape it like in the following screenshot
 
+  ![AutoApprovalFlow]({% image_path m1p7i36_AutoApprovalFlow.png %})
+  
+- Open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set Rule language to DMN
+- Now expand the **Data Assignments** section and provide the following assignments and then click the **Save** button
+
+**Auto Approval Data Inputs**
+![AutoApproveInput]({% image_path m1p7i37_AutoApproveInput.png %})
+
+**Auto Approval Data Outputs**
+![AutoApproveOutput]({% image_path m1p7i38_AutoApproveOutput.png %})
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+After we ‘ve modeled our rules, we will revisit the configuration of this node to reference the rule we created
+
+---
+
+
+### 1.3.8 Create Check Auto Approval gateway
+
+- We will now create a diverging bridge to allow the process to progress in one of two directions:
+ - Auto Approval is true -> Go ahead an insert the order in the [Enterprise Resource System (ERP)](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
+ - Auto Approval is false -> Assign the order to the **Purchasing Manager** for review 
+- Click on the **Auto Approval** task to show it’s mini icons
+- Click on **Create Parallel**
+- Click on the newly created gateway to show it’s mini icons
+- Use it’s configuration icon (the one below the gateway) to convert into an **Exclusive Gateway (X-OR)** by clicking on the **Convert Into Exclusive** icon
+- Name this X-OR gate: **Check Auto Approval**
+
+![CreateAutoApprovalTask]({% image_path m1p7i39_CreateAutoApprovalTask.png %})
+
+### 1.3.9 Create Converge Approval gateway
+
+- In this step we want to create converging gateway to allow the path coming from the auto approval and manual approval (that we will create in scenario 2) to converge at one end event
+- Click on **Check Auto Approval** gateway to show it’s mini icons, click on the **Create Parallel** icon
+- Convert the new gateway to an Exclusive Gateway (X-OR) and name it Converge Approval
+- With the **Properties** pane open click on the **Sequence Flow** between the **Check Auto Approval** gateway and **Converge Approval** gateway, in the **Properties** pane give the Sequence Flow the name auto approved
+
+![CreateConvergeApprovalGW]({% image_path m1p7i40_CreateConvergeApprovalGW.png %})
+
+
+---
+![Info]({% image_path m0_info.png %}){:align="left"} 
+
+To open the **Diagram Properties** pane of a **Sequence Flow** without triggering its format feature (creating a binding point), click on it’s arrowhead instead of its body with the **Properties** pane already opened
+
+---
+
+### 1.3.10 Create Send to ERP end event
+
+- Click on **Converge Approval** gateway to show it’s mini icons
+- Click on Create End 
+- Double click on the end event to name it **Send to ERP**
+
+![CreateSendToERP]({% image_path m1p7i41_CreateSendToERP.png %})
+
+
+We have now finished modeling our first scenario **Auto-Approval** and we will start modeling our second scenario **Manual-Approval**
+
+![ManualApproveFlow]({% image_path m1p7i42_ManualApproveFlow.png %})
+
+###  1.3.11 Create Manual Approval user task
+
+- Using the left menu, create a **User Task** in the **Purchasing Manager** lane, under the **Check Auto Approval** gateway 
+- Double Click on the user task and name it **Manual Approval** 
+- Click on the **Check Auto Approval** gateway and use the **Create Sequence** Flow icon to Connect the **Check Auto Approval** gateway to the **Manual Approval** user task
+- Name this Sequence Flow: **manual approval required**
+
+![ManualApprovalRequired]({% image_path m1p7i43_ManualApprovalRequired.png %})
+
+- Open the **Properties** pane for this task, and expand the **Implementation/Execution** section to provide the following properties: 
+ - **Task Name**: ApproveOffer
+ - **Subject**: Approve Offer of #{orderInfo.item}
+ - **Actors**: pamAdmin
+ - **Groups**: rest-all
+ - **Assignments**: As per the following tables
+
+**Manual Approval Inputs**
+
+![ManualApprovalInput]({% image_path m1p7i44_ManualApproveInput.png %})
+
+**Manual Approval Outputs**
+
+![ManualApprovalOutput]({% image_path m1p7i45_ManualApproveOutput.png %})
 
