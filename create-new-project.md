@@ -32,12 +32,12 @@ To define and deploy a business process, we first need to create a new project i
     
 ![AddProject]({% image_path m1p5i5_AddProjectDialog.png %}){:width="600px”}
 
-
+---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
 
 It is a common practice to link the words that make up a project name with hyphens, as done in this case. This is preferred to using spaces, because using spaces results in file names with spaces in them
 
-
+---
 
 - An empty Assets view is displayed for the project
 - Note the buttons in the middle of the page, these allow you to add or import assets to the project. We will start adding assets in the next section of the workshop.
