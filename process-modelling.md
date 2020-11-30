@@ -341,3 +341,16 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
 
 ![ManualApprovalOutput]({% image_path m1p7i45_ManualApproveOutput.png %})
 
+###  1.3.12 Create Check Manual Approval gateway
+
+- We now want to create another **Exclusive Gateway (X-OR)** in the **Purchasing Manager** swimlane, after the ** Manual Approval** node.
+- Click on the **Manual Approval** node, and then click on the the Create Parallel mini icon
+- Hover over the settings icon under the gateway and click on **Convert into Exclusive** mini icon
+- Name the X-OR gateway: **Check Manual Approval**
+
+![CreateCheckManualApproval]({% image_path m1p7i46_CreateCheckManualApproval.png %})
+
+- Click on the **Check Manual Approval** gateway to show it’s mini icons, click on **Create Sequence Flo**w and connect the **Check Manual Approval** gateway with the **Converge Approval gateway**
+- Name the **Sequence flow** connecting the **Check Auto Approval** gateway and the **Converge Approval** gateway: **manually approved**
+
+
