@@ -1,4 +1,4 @@
-#  Data Modelling (15 mins)
+#  Data Modelling 2 (15 mins)
 
 With the project created, we can now start building our solution starting with the data model to be used in our process and rules. Each process creates, and manipulates data. This data is defined by process variables stored within the process. In **Process Automation Manager**, these process variables can be either pre-defined types, like String, Date, Boolean … etc, or you can create new data objects for your project. 
 
