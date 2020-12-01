@@ -6,7 +6,7 @@ To define and deploy a business process, we first need to create a new project i
 
 - Navigate to **Business Central** (URL provided by your instructor)
 - Login using the following credentials
-    - `pamadmin`
+    - `pamAdmin`
     - `redhatpam1!`
 - Once you login to **Business Central**, you are greeted with 4 groups of functionalities as shown in the following screen
 - Right now we want to start designing our process, so click on **Design** to navigate to the **Design perspective**
