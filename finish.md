@@ -1,3 +1,4 @@
-This scenario has explained the main components of RHPAM and provided you information on how the installation should be done over OpenShift. It also guided you on how to access and configure your environment to start authoring business assets.
 
-In the next scenarios you will learn how to build those assets based on the use case described in this module.
+Congratulations you reached the end of this module! In this module you experienced first hand how to author data models, and processes
+
+In the next model you will learn how to author rules and model forms, and finally you will get to run and test your process.
