@@ -6,8 +6,6 @@ modules:
     name: Introduction and Working Environment
   components-overview:
     name: RHPAM Components and Architecture
-  introduction-to-BPMN-and-DMN:
-    name: Introduction to BPMN and DMN
   use-case-overview:
     name: Use Case Introduction
   create-new-project:
