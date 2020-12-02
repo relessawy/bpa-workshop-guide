@@ -70,7 +70,7 @@ It is common practice to use [Pascal](https://techterms.com/definition/pascalcas
  
  ![PropertiesPane]({% image_path m1p7i9_PropertiesPane2.png %})
 
-- Scroll down in the property panel on the right side of the screen, until you see the section Process Data.
+- Scroll down in the property panel on the right side of the screen, until you see the section **Process Data**.
 ![ProcessVariables]({% image_path m1p7i10_ProcessVariables.png %})
 
 
@@ -89,9 +89,15 @@ If you see something that looks like the screen below, then you will need to sel
 
 ![AddProcessVariable]({% image_path m1p7i12_AddProcessVariable.png %})
 
-Define a process variable as shown in the following table
+- Define a process variable as shown in the following table:
 
-![ProcessVariableTable]({% image_path m1p7i53_ProcessVariableTable.png %}){:height="400px" width="500px"} 
+|      Name    |     Data Type  |
+|     :---:    |     :---:      |
+| orderInfo    | OrderInfo      |
+| approved     | Boolean        |
+
+- Your **Process Variables** should like the following screenshot when your done:
+
 
 ![ProcessVariable]({% image_path m1p7i13_ProcessVariable.png %})
 
