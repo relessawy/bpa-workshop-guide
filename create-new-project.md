@@ -35,7 +35,7 @@ To define and deploy a business process, we first need to create a new project i
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
 
-It is a common practice to link the words that make up a project name with hyphens, as done in this case. This is preferred to using spaces, because using spaces results in file names with spaces in them
+It is a common practice to link the words that make up a project name with hyphens instead of spaces, as done in this case. Using spaces will create invalid file names.
 
 ---
 
