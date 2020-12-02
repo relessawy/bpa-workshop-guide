@@ -15,7 +15,7 @@ In this workshop, we will create a new data object to capture the order informat
 
 ![DataObjectTile]({% image_path m1p6i2_DataObjectTile.png %}){:width="600px”}
 
-- Fill in the data object details as follows and then click the **OK** button
+- Fill in the data object details as follows and then click the **+OK** button
     - **Name**: OrderInfo
     - **Package**: Leave the default value
     - **JPA Persistable**: Leave unchecked
