@@ -163,7 +163,8 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 
 ![RequestOfferTask]({% image_path m1p7i21_RequestOfferTask.png %})
 
-- With the **Request Offer** node selected Open the **Properties pane** for this node, and expand the **Implementation/Execution** section
+- With the **Request Offer** node selected Open the **Properties pane** for this node 
+- Expand the **Implementation/Execution** section
 - Set the **Task Name** to: RequestOffer
 - Set the **Subject** to: Request Offer for #{orderInfo.item}
 - Click on the **+Add** button under **Actors** and choose **pamAdmin** (your user)
@@ -189,14 +190,22 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 - Provide the input as follows:
 
 Request Offer Input
-![requestOfferInput]({% image_path m1p7i26_requestOfferInput.png %})
+
+|      Name    |    Data Type   |      Source   |
+|     :---:    |     :---:      |     :---:     |
+| orderInfo_in | OrderInfo      | orderInfo     |
 
 - You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. You are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
 - Now click the **+Add** button next to **Data Outputs and Assignments**
-- Like you did before provide the input as follows and then click **Save**
+- Like you did before provide the input as follows and then click **OK**
+- It is very important that the name in the input assignments is the same as the name in the output assignments i.e. orderInfo_in
 
 Request Offer Output
-![requestOfferOutput]({% image_path m1p7i27_requestOfferOutput.png %})
+
+
+|      Name    |    Data Type   |      Target   |
+|     :---:    |     :---:      |     :---:     |
+| orderInfo_in | OrderInfo      | orderInfo     |
 
 - Your **RequestOffer Data I/O** should look something like this:
 
@@ -213,7 +222,7 @@ Request Offer Output
 - Click within the **Supplier** lane to place the **User** task
 - Double click to give it the name **Prepare Offer**
 
-![PrepareOfferTas]({% image_path m1p7i30_PrepareOfferTask.png %})
+![PrepareOfferTask]({% image_path m1p7i30_PrepareOfferTask.png %})
 
 - Click on the **Request Offer** task and click on the mini icon **Create Sequence Flow**
 - Drag the sequence flow to connect the **Request Offer** task to the **Prepare Offer** task
@@ -227,13 +236,21 @@ Request Offer Output
   - **Subject**: Prepare Offer for #{orderInfo.item}
   - **Actors**: pamAdmin
   - **Groups**: rest-all
-  - **Assignments**: As per the following tables
+  - **Assignments**: Same as before, and as per the following tables
  
  **Prepare Offer Data Inputs**
- ![PrepareOfferInput]({% image_path m1p7i32_PrepareOfferInput.png %})
+
+
+|      Name    |    Data Type   |      Source   |
+|     :---:    |     :---:      |     :---:     |
+| orderInfo_in | OrderInfo      | orderInfo     |
  
  **Prepare Offer Data Outputs**
- ![PrepareOfferOutput]({% image_path m1p7i33_PrepareOfferOutput.png %})
+
+
+|      Name    |    Data Type   |      Target   |
+|     :---:    |     :---:      |     :---:     |
+| orderInfo_in | OrderInfo      | orderInfo     |
  
  - Your **Prepare Offer** properties should look something like this:
  
@@ -250,7 +267,7 @@ Remember to save your progress
 
 ### 1.6.7 Create AutoApproval business rule task 
 
-- In this step we will create the task the calls the business rule to decide whether the order can be auto -approved or not
+- In this step we will create the task that calls the business rule to decide whether the order can be auto -approved or not
 - In the palette on the left-side of the editor, click on the **Tasks** icon then select the Business Rule task
 
  ![businessRuleTaskMenu]({% image_path m1p7i35_businessRuleTaskMenu.png %})
@@ -262,14 +279,22 @@ Remember to save your progress
 
   ![AutoApprovalFlow]({% image_path m1p7i36_AutoApprovalFlow.png %})
   
-- Open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set **Rule language** to **DMN**
-- Now expand the **Data Assignments** section and provide the following assignments and then click the **Save** button
+- Select the  **Auto Approval** node, and then open the **Properties** pane for this node
+- Expand the **Implementation/Execution** section
+- Set **Rule language** to **DMN**
+- Now expand the **Data Assignments** section and provide the following assignments and then click the **Ok** button
 
 **Auto Approval Data Inputs**
-![AutoApproveInput]({% image_path m1p7i37_AutoApproveInput.png %})
+
+|      Name         |    Data Type   |      Source   |
+|     :---:         |     :---:      |     :---:     |
+| Order Information | OrderInfo      | orderInfo     |
 
 **Auto Approval Data Outputs**
-![AutoApproveOutput]({% image_path m1p7i38_AutoApproveOutput.png %})
+
+|      Name    |    Data Type   |      Target   |
+|     :---:    |     :---:      |     :---:     |
+| Approve      |   Boolean     |   approved     |
 
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
