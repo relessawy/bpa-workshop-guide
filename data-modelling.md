@@ -46,7 +46,7 @@ In this workshop, we will create a new data object to capture the order informat
 ![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:height="600px" width="700px"}
 
 - Continue adding the **OrderInfo** object fields as shown in the table below
-- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
+- Once you provide the input for the last field **supplierPrice**, click **Create** instead of **Create and Continue**
 
 <p></p>
 
