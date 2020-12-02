@@ -38,7 +38,7 @@ In this workshop, we will create a new data object to capture the order informat
 
 - Add the first property ‘orderId’ to the OrderInfo object, with the details shown below
   - Id: item
-  - Label: item name
+  - Label: Item Name
   - Type: String
   
 - Click the Create and Continue button to continue adding properties
@@ -48,9 +48,13 @@ In this workshop, we will create a new data object to capture the order informat
 -- Continue adding the ‘Order Info’ object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
-
-![DataObjectTable]({% image_path m1p6i10_DataObjectTable.png %}){:height="600px" width="700px"}
-
+| Identifier.  |     Label.     |      Type     |
+|     :---:    |     :---:      |     :---:     |
+| item         | Item Name      | String        |
+| supplier     | Supplier Name  | String        |
+| urgency      | Urgency        | String        |
+| targetPrice  | Target Price   | float         |
+| supplierPrice| Supplier Price | float         |
 
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
