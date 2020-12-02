@@ -299,7 +299,7 @@ Remember to save your progress
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
 
-After we ‘ve modeled our rules, we will revisit the configuration of this node to reference the rule we created
+In module 2 after we finish modeling our rules, we will revisit the configuration of this node to reference the rule we create
 
 ---
 
@@ -307,21 +307,22 @@ After we ‘ve modeled our rules, we will revisit the configuration of this node
 ### 1.6.8 Create Check Auto Approval gateway
 
 - We will now create a diverging bridge to allow the process to progress in one of two directions:
- - Auto Approval is true -> Go ahead an insert the order in the [Enterprise Resource System (ERP)](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
+ - Auto Approval is true -> Go ahead and insert the order in the [Enterprise Resource System (ERP)](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
  - Auto Approval is false -> Assign the order to the **Purchasing Manager** for review 
 - Click on the **Auto Approval** task to show it’s mini icons
 - Click on **Create Parallel**
 - Click on the newly created gateway to show it’s mini icons
-- Use it’s configuration icon (the one below the gateway) to convert into an **Exclusive Gateway (X-OR)** by clicking on the **Convert Into Exclusive** icon
+- Use it’s configuration icon (the one below the gateway) to convert it into an **Exclusive Gateway (X-OR)** by clicking on the **Convert Into Exclusive** icon
 - Name this X-OR gate: **Check Auto Approval**
 
 ![CreateAutoApprovalTask]({% image_path m1p7i39_CreateAutoApprovalTask.png %})
 
 ### 1.6.9 Create Converge Approval gateway
 
-- In this step we want to create converging gateway to allow the path coming from the auto approval and manual approval (that we will create in scenario 2) to converge at one end event
+- In this step we want to create converging gateway to allow the path coming from the auto approval and manual approval (that we will create in scenario 2) to converge at one **end event**
 - Click on **Check Auto Approval** gateway to show it’s mini icons, click on the **Create Parallel** icon
-- Convert the new gateway to an Exclusive Gateway (X-OR) and name it Converge Approval
+- Convert the new gateway to an Exclusive Gateway (X-OR) 
+- Name this gateway **Converge Approval**
 - With the **Properties** pane open click on the **Sequence Flow** between the **Check Auto Approval** gateway and **Converge Approval** gateway, in the **Properties** pane give the **Sequence Flow** the name **auto approved**
 
 ![CreateConvergeApprovalGW]({% image_path m1p7i40_CreateConvergeApprovalGW.png %})
@@ -343,20 +344,20 @@ To open the **Diagram Properties** pane of a **Sequence Flow** without triggerin
 ![CreateSendToERP]({% image_path m1p7i41_CreateSendToERP.png %})
 
 
-We have now finished modeling our first scenario **Auto-Approval** and we will start modeling our second scenario **Manual-Approval**
+We have now finished modeling our first scenario **Auto-Approval** and we will start modeling our second scenario **Manual-Approval** in the next section
 
 ![ManualApproveFlow]({% image_path m1p7i42_ManualApproveFlow.png %})
 
 ###  1.6.11 Create Manual Approval user task
 
-- Using the left menu, create a **User Task** in the **Purchasing Manager** lane, under the **Check Auto Approval** gateway 
+- Using the left menu, create a user task in the **Purchasing Manager** lane, under the **Check Auto Approval** gateway 
 - Double Click on the user task and name it **Manual Approval** 
-- Click on the **Check Auto Approval** gateway and use the **Create Sequence** Flow icon to Connect the **Check Auto Approval** gateway to the **Manual Approval** user task
+- Click on the **Check Auto Approval** gateway and use the **Create Sequence** Flow icon to connect the **Check Auto Approval** gateway to the **Manual Approval** user task
 - Name this Sequence Flow: **manual approval required**
 
 ![ManualApprovalRequired]({% image_path m1p7i43_ManualApprovalRequired.png %})
 
-- Open the **Properties** pane for this task, and expand the **Implementation/Execution** section to provide the following properties: 
+- Open the **Properties** pane for the **Manual Approval** task, and expand the **Implementation/Execution** section to provide the following properties: 
   - **Task Name**: ApproveOffer
   - **Subject**: Approve Offer of #{orderInfo.item}
   - **Actors**: pamAdmin
@@ -365,16 +366,21 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
 
 **Manual Approval Inputs**
 
-![ManualApprovalInput]({% image_path m1p7i44_ManualApproveInput.png %})
+|      Name    |    Data Type   |      Source   |
+|     :---:    |     :---:      |     :---:     |
+| orderInfo_in | OrderInfo      | orderInfo     |
+| approved     |    Boolean     | approved      |
 
 **Manual Approval Outputs**
 
-![ManualApprovalOutput]({% image_path m1p7i45_ManualApproveOutput.png %})
+|      Name    |    Data Type   |      Target   |
+|     :---:    |     :---:      |     :---:     |
+| approved     |    Boolean     | approved      |
 
 ###  1.6.12 Create Check Manual Approval gateway
 
 - We now want to create another **Exclusive Gateway (X-OR)** in the **Purchasing Manager** swimlane, after the **Manual Approval** node.
-- Click on the **Manual Approval** node, and then click on the the Create Parallel mini icon
+- Click on the **Manual Approval** node, and then click on the the **Create Parallel** mini icon
 - Hover over the settings icon under the gateway and click on **Convert into Exclusive** mini icon
 - Name the X-OR gateway: **Check Manual Approval**
 
@@ -386,12 +392,12 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
 ![ManuallyAprrovedSequence]({% image_path m1p7i47_ManuallyAprrovedSequence.png %})
 
 - Select the **Check Auto Approval** gateway
-- Open the Diagram properties pane, and expand the **Implementation/Execution** section
+- Open the **Properties** pane, and expand the **Implementation/Execution** section
 - Set the **Default Route** property to **Manual Approval**
 
 ![CheckAutoApprovalDefaultRoute]({% image_path m1p7i48_CheckAutoApprovalDefaultRoute.png %})
 
-- Open the **Diagram properties** pane for the **auto approved**  sequence flow, and expand the **Implementation/Execution** section
+- Open the **Properties** pane for the **auto approved**  sequence flow, and expand the **Implementation/Execution** section
 - We want to set the following condition, this path should be taken when the order is approved by the system:
  - **Process Variable**: approved
  - **Condition**: Is true
@@ -417,8 +423,8 @@ We have now finished modeling our second scenario Manual-Approval and we will st
 
 ###  1.6.13 Create Rejected end event
 
-- Create an **End Event** node after the **Check Manual Approval** gateway and name it **Reject**.
-- Select the **Check Manual Approve** gateway, and set it’s **Default Route** to **Reject**
+- Create an **End Event** node after the **Check Manual Approval** gateway and name it **Rejected**.
+- Select the **Check Manual Approve** gateway, and set it’s **Default Route** to **Rejected**
 
 ![RejectionEndNode]({% image_path m1p7i51_RejectionEndNode.png %})
 
