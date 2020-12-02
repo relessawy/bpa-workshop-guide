@@ -2,13 +2,10 @@
 
 Welcome to the first module of the Red Hat Process Automation Manager (RHPAM) workshop. During this module, you will have an overview of:
 
-- Red Hat Process Automation Manager 7 architecture components;
-- The business use case you will solve with Red Hat Process Automation Manager;
+- Red Hat Process Automation Manager 7 architecture components
+- The business use case you will solve with Red Hat Process Automation Manager
+- How to build the data model for the use case
+- How to model the business process in Red Hat Process Automation Manager
 
-We will inform the access details for each environment later on as we get to the hands-on exercises. Let's start by first understanding the use case we will solve.
+ Let's start with an overview of RH PAM components and architecture. Click on the blue button to the bottom right to proceed.
 
-# Your Working Environment
-
-A whole environment with Red Hat Process Automation Manager has already been provisioned for you within an OpenShift platform.
-
-The access information to the environment like url, user and password will be displayed along with the instructions as you go through the guide.
