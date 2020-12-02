@@ -171,19 +171,10 @@ Clicking on a node/event displays a set of mini icons that you can use to config
 
 ![pamAdmin]({% image_path m1p7i22_pamAdmin.png %})
 
-- Click on the **+Add button** under **Groups** then expand the drop down list and click on **+New** 
-- Type in the group name as **rest-all**, and then click on the check mark
-
-![restAll]({% image_path m1p7i23_restAll.png %})
-
-- Now select the new group rest-all you just created
-
-![Actors_Groups]({% image_path m1p7i24_actors_groups.png %})
-
 - The next step is to pass our process variable **orderInfo** to the **Request Offer** task (task input), this will hold the information that a user will provide in the **Request Offer** task and then return it to the process (task output) to be available for the next steps in the flow
 - Click on the pencil icon under **Assignments**
 
-![Assignments]({% image_path m1p7i25_assignments.png %})
+![Assignments]({% image_path m1p6i70_assignments.png %})
 
 - This generates a pop-up: **Request Offer Data I/O** dialog
 - Click the **+Add** button next to **Data Inputs and Assignments** 
@@ -235,7 +226,6 @@ Request Offer Output
   - **Task Name**: PrepareOffer
   - **Subject**: Prepare Offer for #{orderInfo.item}
   - **Actors**: pamAdmin
-  - **Groups**: rest-all
   - **Assignments**: Same as before, and as per the following tables
  
  **Prepare Offer Data Inputs**
@@ -361,7 +351,6 @@ We have now finished modeling our first scenario **Auto-Approval** and we will s
   - **Task Name**: ApproveOffer
   - **Subject**: Approve Offer of #{orderInfo.item}
   - **Actors**: pamAdmin
-  - **Groups**: rest-all
   - **Assignments**: As per the following tables
 
 **Manual Approval Inputs**
