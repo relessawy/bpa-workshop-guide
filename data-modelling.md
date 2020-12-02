@@ -36,7 +36,7 @@ In this workshop, we will create a new data object to capture the order informat
 
 ![AddFIELD]({% image_path m1p6i11_AddField2.png %}){:width="600px”}
 
-- Add the first property ‘orderId’ to the OrderInfo object, with the details shown below
+- Add the first property **item** to the OrderInfo object, with the details shown below
   - Id: item
   - Label: Item Name
   - Type: String
