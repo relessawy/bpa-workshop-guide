@@ -32,21 +32,21 @@ In this workshop, we will create a new data object to capture the order informat
 
 ![AddLabel]({% image_path m1p6i5_AddLabel.png %}){:width="600px”}
 
--- Click on the **+add field** button to open the pop-up editor, and start adding properties to the job object
+-- Click on the **+add field** button to open the **New Field** dialog, and start adding fields to the job object
 
 ![AddFIELD]({% image_path m1p6i11_AddField2.png %}){:width="600px”}
 
-- Add the first property **item** to the **OrderInfo** object, with the following details:
+- Add the first field **item** to the **OrderInfo** object, with the following details:
   - Id: item
   - Label: Item Name
   - Type: String
   
-- Click the **Create and Continue** button to continue adding properties
+- Click the **Create and Continue** button to continue adding fields
 
 ![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:height="600px" width="700px"}
 
--- Continue adding the **OrderInfo** object properties as shown in the table below
--- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
+- Continue adding the **OrderInfo** object fields as shown in the table below
+- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
 <p></p>
 
