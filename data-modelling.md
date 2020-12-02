@@ -34,7 +34,7 @@ In this workshop, we will create a new data object to capture the order informat
 
 -- Click on the **+add field** button to open the pop-up editor, and start adding properties to the job object
 
-![AddFIELD]({% image_path m1p6i6_AddField.png %}){:width="600px”}
+![AddFIELD]({% image_path m1p6i11_AddField2.png %}){:width="600px”}
 
 - Add the first property ‘orderId’ to the OrderInfo object, with the details shown below
   - Id: item
