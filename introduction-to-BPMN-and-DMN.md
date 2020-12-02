@@ -1,14 +1,15 @@
 # introduction-to-BPMN-and-DMN
 
 
-<div class="TableObject">
-  <div class="TableObject-item TableObject-item--primary">
-    <input class="input-block form-control" type="text" placeholder="Long elastic input form" aria-label="Long elastic input form">
-  </div>
-  <div class="TableObject-item">
-    <button class="btn ml-2" type="button">Button</button>
-  </div>
-</div>
+[cols="2"]
+|===
+|plain
+|plain
+|RED
+{set:cellbgcolor:red}
+|plain
+{set:cellbgcolor!}
+|===
 
 
 In this lab, we are going to create a new project and provision a whole environment using the RHPAM Trial Ephemeral.
