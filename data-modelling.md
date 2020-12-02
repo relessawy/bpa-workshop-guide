@@ -36,16 +36,16 @@ In this workshop, we will create a new data object to capture the order informat
 
 ![AddFIELD]({% image_path m1p6i11_AddField2.png %}){:width="600px”}
 
-- Add the first property **item** to the OrderInfo object, with the details shown below
+- Add the first property **item** to the **OrderInfo** object, with the following details:
   - Id: item
   - Label: Item Name
   - Type: String
   
-- Click the Create and Continue button to continue adding properties
+- Click the **Create and Continue** button to continue adding properties
 
 ![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:height="600px" width="700px"}
 
--- Continue adding the ‘Order Info’ object properties as shown in the table below
+-- Continue adding the **OrderInfo** object properties as shown in the table below
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
 <p></p>
@@ -61,7 +61,7 @@ In this workshop, we will create a new data object to capture the order informat
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
 
-Click on the Source tab, notice that as you add fields, Red Hat Process Automation Manager (RH PAM) generates the Java code on your behalf. This is an example of how RH PAM supports the developer’s persona, where a developer can collaborate with a business analyst using his/her favourite IDE to build the data model. 
+Click on the **Source** tab, notice that as you add fields, **Red Hat Process Automation Manager (RH PAM)** generates the Java code on your behalf. This is an example of how **RH PAM** supports the developer’s persona, where a developer can collaborate with a business analyst using his/her favourite IDE to build the data model. 
 
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
