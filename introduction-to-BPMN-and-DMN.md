@@ -1,14 +1,14 @@
 # introduction-to-BPMN-and-DMN
 
 
-[cols="2"]
+[cols=",,",options="header",]
 |===
-|plain
-|plain
-|RED
-{set:cellbgcolor:red}
-|plain
-{set:cellbgcolor!}
+|*_Identifier_* |*_Label_* |*_Type_*
+|item |Item Name |String
+|supplier |Supplier Name |String
+|urgency |Urgency |String
+|targetPrice |Target Price |float
+|supplierPrice |Supplier Price |float
 |===
 
 
