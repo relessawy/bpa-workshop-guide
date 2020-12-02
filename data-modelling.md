@@ -49,7 +49,8 @@ In this workshop, we will create a new data object to capture the order informat
 -- Once you provide the input for the last attribute ‘approved’, click **Create** instead of **Create and Continue**
 
 <p></p>
-| Identifier.  |     Label.     |      Type     |
+
+| Identifier   |     Label      |      Type     |
 |     :---:    |     :---:      |     :---:     |
 | item         | Item Name      | String        |
 | supplier     | Supplier Name  | String        |
