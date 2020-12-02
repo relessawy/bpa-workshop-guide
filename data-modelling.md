@@ -2,6 +2,8 @@
 
 With the project created, we can now start building our solution starting with the data model to be used in our process and rules. Each process creates, and manipulates data. This data is defined by process variables stored within the process. In **Process Automation Manager**, these process variables can be either pre-defined types, like String, Date, Boolean … etc, or you can create new data objects for your project. 
 
+### 1.5.1 Create Data Object
+
 In this workshop, we will create a new data object to capture the order information.
 
 - In your project, click on the **Add Asset** button in the middle of the screen.
@@ -13,10 +15,14 @@ In this workshop, we will create a new data object to capture the order informat
 
 ![DataObjectTile]({% image_path m1p6i2_DataObjectTile.png %}){:width="600px”}
 
-- Give the Data Object the name **OrderInfo**. Leave the package set to default, and leave the JPA Persistable option unchecked.
-- Click the **+OK** button
+- Fill in the data object details as follows and then click the **OK** button
+    - **Name**: OrderInfo
+    - **Package**: Leave the default value
+    - **JPA Persistable**: Leave unchecked
 
 ![CreateDataObject]({% image_path m1p6i3_CreateDataObject.png %}){:width="600px”}
+
+### 1.5.2 Add fields to OrderInfo
 
 - You are now using the **Data Modeler** component 
 
