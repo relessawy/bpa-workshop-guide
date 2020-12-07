@@ -33,4 +33,5 @@ modules:
   - create-new-project
   - data-modelling
   - process-modelling
+  - process-modelling_cont
   - finish
