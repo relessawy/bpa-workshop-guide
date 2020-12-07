@@ -1,4 +1,4 @@
-# Process Modelling (50 mins)
+# Process Modelling (30 mins)
 
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
@@ -307,116 +307,31 @@ In module 2 after we finish modeling our rules, we will revisit the configuratio
 
 ![CreateAutoApprovalTask]({% image_path m1p7i39_CreateAutoApprovalTask.png %})
 
-### 1.6.9 Create Converge Approval gateway
+### 1.6.9 Import Complete Project
 
-- In this step we want to create converging gateway to allow the path coming from the auto approval and manual approval (that we will create in scenario 2) to converge at one **end event**
-- Click on **Check Auto Approval** gateway to show it’s mini icons, click on the **Create Parallel** icon
-- Convert the new gateway to an Exclusive Gateway (X-OR) 
-- Name this gateway **Converge Approval**
-- With the **Properties** pane open click on the **Sequence Flow** between the **Check Auto Approval** gateway and **Converge Approval** gateway, in the **Properties** pane give the **Sequence Flow** the name **auto approved**
-
-![CreateConvergeApprovalGW]({% image_path m1p7i40_CreateConvergeApprovalGW.png %})
-
-
----
-![Info]({% image_path m0_info.png %}){:align="left"} 
-
-To open the **Diagram Properties** pane of a **Sequence Flow** without triggering its format feature (creating a binding point), click on it’s arrowhead instead of its body with the **Properties** pane already opened
-
----
-
-### 1.6.10 Create Send to ERP end event
-
-- Click on **Converge Approval** gateway to show it’s mini icons
-- Click on Create End 
-- Double click on the end event to name it **Send to ERP**
-
-![CreateSendToERP]({% image_path m1p7i41_CreateSendToERP.png %})
-
-
-We have now finished modeling our first scenario **Auto-Approval** and we will start modeling our second scenario **Manual-Approval** in the next section
-
-![ManualApproveFlow]({% image_path m1p7i42_ManualApproveFlow.png %})
-
-###  1.6.11 Create Manual Approval user task
-
-- Using the left menu, create a user task in the **Purchasing Manager** lane, under the **Check Auto Approval** gateway 
-- Double Click on the user task and name it **Manual Approval** 
-- Click on the **Check Auto Approval** gateway and use the **Create Sequence** Flow icon to connect the **Check Auto Approval** gateway to the **Manual Approval** user task
-- Name this Sequence Flow: **manual approval required**
-
-![ManualApprovalRequired]({% image_path m1p7i43_ManualApprovalRequired.png %})
-
-- Open the **Properties** pane for the **Manual Approval** task, and expand the **Implementation/Execution** section to provide the following properties: 
-  - **Task Name**: ApproveOffer
-  - **Subject**: Approve Offer of #{orderInfo.item}
-  - **Actors**: pamAdmin
-  - **Assignments**: As per the following tables
-
-**Manual Approval Inputs**
-
-|      Name    |    Data Type   |      Source   |
-|     :---:    |     :---:      |     :---:     |
-| orderInfo_in | OrderInfo      | orderInfo     |
-| approved     |    Boolean     | approved      |
-
-**Manual Approval Outputs**
-
-|      Name    |    Data Type   |      Target   |
-|     :---:    |     :---:      |     :---:     |
-| approved     |    Boolean     | approved      |
-
-###  1.6.12 Create Check Manual Approval gateway
-
-- We now want to create another **Exclusive Gateway (X-OR)** in the **Purchasing Manager** swimlane, after the **Manual Approval** node.
-- Click on the **Manual Approval** node, and then click on the the **Create Parallel** mini icon
-- Hover over the settings icon under the gateway and click on **Convert into Exclusive** mini icon
-- Name the X-OR gateway: **Check Manual Approval**
-
-![CreateCheckManualApproval]({% image_path m1p7i46_CreateCheckManualApproval.png %})
-
-- Click on the **Check Manual Approval** gateway to show it’s mini icons, click on **Create Sequence Flow** and connect the **Check Manual Approval** gateway with the **Converge Approval gateway**
-- Name the **Sequence flow** connecting the **Check Auto Approval** gateway and the **Converge Approval** gateway: **manually approved**
-
-![ManuallyAprrovedSequence]({% image_path m1p7i47_ManuallyAprrovedSequence.png %})
-
-- Select the **Check Auto Approval** gateway
-- Open the **Properties** pane, and expand the **Implementation/Execution** section
-- Set the **Default Route** property to **Manual Approval**
-
-![CheckAutoApprovalDefaultRoute]({% image_path m1p7i48_CheckAutoApprovalDefaultRoute.png %})
-
-- Open the **Properties** pane for the **auto approved**  sequence flow, and expand the **Implementation/Execution** section
-- We want to set the following condition, this path should be taken when the order is approved by the system:
- - **Process Variable**: approved
- - **Condition**: Is true
-
-![AutoApproveCondition]({% image_path m1p7i49_AutoApproveCondition.png %})
-
-
----
-![Tip]({% image_path m0_tip.png %}){:align="left"} 
-
-It may seem counterintuitive at first, however the conditions for these X-OR statements don't go into the details on the Gateway properties, rather the conditions are placed on the sequence flows.  If you think that you are setting a direction path, and on that direction path line you are telling the system under what conditions it should go this way, and on the other pathway under what conditions the system should go that way - thinking of it this way makes it seem intuitive.
-
----
-
-- Similarly set the following conditions for the **manually approved** sequence flow:
-  - **Process Variable**: approved
-  - **Condition**: Is true
+- Now that you've had a chance to try the **Process Designer**, you can do one of two things
+ - Import the full project, skip module 1 part 7 and move on to module 2 (Recommended)
+ - Continue to build the process step by step in module 1 part 7
  
  
-We have now finished modeling our second scenario Manual-Approval and we will start modeling our final scenario Rejection
+- Here will guide you thorugh the steps to import the complete project, if you want to build the process yourself skip this part and move on to module 1 part 7
+  - Download the process you created thus far for your reference  by clicking the **Download** button in the upper menue
+  - Delete the OrderAsset you created by clicking the **Delete** button in the upper menue
+  
+  ![DownloadDelete]({% image_path m1p7i91_Download_Delete.png %})
+  
+  - Download the full process from [here](https://drive.google.com/file/d/1fWDsDTSobHVtRiZsW5cVCnGRhqA3xmuF/view?usp=sharing)
+  - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
+  - Click on the **Import Asset** button 
+  - Select the **Choose File** button, below the **Please select a file to upload** field
+  
+  ![ChooseFile]({% image_path m1p7i90_choosefile.png %})
 
-![RejectionFlow]({% image_path m1p7i50_RejectionFlow.png %})
+- Select the OrderAsset.bpmn from the path you downloaded the file to, then click the **Open** button
+- Provide the name **OrderAssetr** in the **Import Asset** field
+- Click the **+OK** button
 
-###  1.6.13 Create Rejected end event
-
-- Create an **End Event** node after the **Check Manual Approval** gateway and name it **Rejected**.
-- Select the **Check Manual Approve** gateway, and set it’s **Default Route** to **Rejected**
-
-![RejectionEndNode]({% image_path m1p7i51_RejectionEndNode.png %})
-
+![ImportProcess]({% image_path m1p7i92_ImportProcess.png %})
 
 ---
 ![Save]({% image_path m0_save.png %}){:align="left"} 
