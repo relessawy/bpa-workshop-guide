@@ -306,8 +306,8 @@ In module 2 after we finish modeling our rules, we will revisit the configuratio
 ### 1.6.9 Import Complete Project
 
 - Now that you've had a chance to try the **Process Designer**, you can do one of two things
- - Import the full project, skip module 1 part 7 and move on to module 2 (Recommended)
- - Continue to build the process step by step in module 1 part 7
+  - Import the full project, skip module 1 part 7 and move on to module 2 (Recommended)
+  - Continue to build the process step by step in module 1 part 7
  
  
 - Here will guide you thorugh the steps to import the complete project, if you want to build the process yourself skip this part and move on to module 1 part 7
