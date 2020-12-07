@@ -317,7 +317,7 @@ In module 2 after we finish modeling our rules, we will revisit the configuratio
   
   ![DownloadDelete]({% image_path m1p7i91_Download_Delete.png %})
   
-  - Download the full process from [here](https://drive.google.com/file/d/1fWDsDTSobHVtRiZsW5cVCnGRhqA3xmuF/view?usp=sharing)
+  - Download the full process from [here](https://drive.google.com/file/d/1VMdU5T16dRBYqIAQz9JnYoi5O3INWnx7/view?usp=sharing)
   - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
   - Click on the **Import Asset** button 
   - Select the **Choose File** button, below the **Please select a file to upload** field
