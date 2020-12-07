@@ -242,10 +242,6 @@ Request Offer Output
 |     :---:    |     :---:      |     :---:     |
 | orderInfo_in | OrderInfo      | orderInfo     |
  
- - Your **Prepare Offer** properties should look something like this:
- 
-  ![PrepareOfferAssignments]({% image_path m1p7i34_PrepareOfferAssignments.png %})
- 
  
 
 ---
