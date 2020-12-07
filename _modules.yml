@@ -14,5 +14,7 @@ modules:
     name: Data Modelling
   process-modelling:
     name: Process Modelling
+  process-modelling_cont:
+    name: Process Modelling Cont.
   finish:
     name: Conclusion
