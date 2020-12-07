@@ -318,17 +318,19 @@ In module 2 after we finish modeling our rules, we will revisit the configuratio
   ![DownloadDelete]({% image_path m1p7i91_Download_Delete.png %})
   
   - Download the full process from [here](https://drive.google.com/file/d/1VMdU5T16dRBYqIAQz9JnYoi5O3INWnx7/view?usp=sharing)
-  - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
+  - If you are not already in the  **procurement-process** project view, use the **breadcrumb navigator** at the top-left of the screen to navigate there
   - Click on the **Import Asset** button 
   - Select the **Choose File** button, below the **Please select a file to upload** field
   
   ![ChooseFile]({% image_path m1p7i90_choosefile.png %})
 
-- Select the OrderAsset.bpmn from the path you downloaded the file to, then click the **Open** button
+- Select the OrderAssetComplete.bpmn from the path you downloaded the file to, then click the **Open** button
 - Provide the name **OrderAsset** in the **Import Asset** field
 - Click the **+OK** button
 
 ![ImportProcess]({% image_path m1p7i92_ImportProcess.png %})
+
+Note: Name of the downloaded file may be different from this screenshot
 
 ---
 ![Save]({% image_path m0_save.png %}){:align="left"} 
