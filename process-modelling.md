@@ -310,9 +310,10 @@ In module 2 after we finish modeling our rules, we will revisit the configuratio
   - Continue to build the process step by step in module 1 part 7
  
  
-- Here will guide you thorugh the steps to import the complete project, if you want to build the process yourself skip this part and move on to module 1 part 7
-  - Download the process you created thus far for your reference  by clicking the **Download** button in the upper menue
-  - Delete the OrderAsset you created by clicking the **Delete** button in the upper menue
+- In this section we will guide you through the steps to import the complete project, if you want to build the process yourself skip this section and move on to module 1 part 7
+   - Before you import the full **OrderAsset** process, you will need to delete the one you already created. It's a good idea to keep a copy of your process
+   - Download the process you created by clicking the **Download** button in the upper menu
+   - Delete the the current **OrderAsset** process by clicking the **Delete** button in the upper menu
   
   ![DownloadDelete]({% image_path m1p7i91_Download_Delete.png %})
   
@@ -324,7 +325,7 @@ In module 2 after we finish modeling our rules, we will revisit the configuratio
   ![ChooseFile]({% image_path m1p7i90_choosefile.png %})
 
 - Select the OrderAsset.bpmn from the path you downloaded the file to, then click the **Open** button
-- Provide the name **OrderAssetr** in the **Import Asset** field
+- Provide the name **OrderAsset** in the **Import Asset** field
 - Click the **+OK** button
 
 ![ImportProcess]({% image_path m1p7i92_ImportProcess.png %})
