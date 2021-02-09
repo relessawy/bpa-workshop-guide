@@ -11,3 +11,7 @@ In this workshop we will create a Procurement process that manages the process o
 ---
 
 ![Overview]({% image_path m1p4i1_Overview.png %}){:width="600px”}
+
+---
+
+You can watch a 20 mins video covering an introduction to business process automation and the BPMN standard [here](https://www.youtube.com/watch?v=R1d41oWdXtk)
