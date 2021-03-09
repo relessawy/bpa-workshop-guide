@@ -78,12 +78,19 @@ If you see something that looks like the screen below, then you will need to sel
 
 ---
 
-### 1.6.3 Configure Request Offer user task
+### 1.6.3 Create Request Offer user task
 
-- Click on the **Request Offer** node 
-- With the **Request Offer** node selected, open the **Properties pane** for this node 
+- Click on the **Start Event** node, and click **Create Task**
+- Click on the task node again and using the configuration icon below it, convert this node into a **Usertask** by clicking on the **Convert Into User** mini icon
+- Double Click on the node to give it the name **Request Offer**
+
+![RequestOfferTask]({% image_path m1p7i21_RequestOfferTask.png %})
+
+- With the **Request Offer** node selected Open the **Properties pane** for this node 
 - Expand the **Implementation/Execution** section
-- Click on the **+Add** button under **Actors** and choose **pamAdmin** (your user), this way when the process reaches this task **RH PAM** will assign it to your user
+- Set the **Task Name** to: RequestOffer
+- Set the **Subject** to: Request Offer for #{orderInfo.item}
+- Click on the **+Add** button under **Actors** and choose **pamAdmin** (your user)
 
 ![pamAdmin]({% image_path m1p7i22_pamAdmin.png %})
 
@@ -104,7 +111,7 @@ Request Offer Input
 
 - You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. You are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
 - Now click the **+Add** button next to **Data Outputs and Assignments**
-- Like you did before provide the input as follows 
+- Like you did before provide the input as follows and then click **OK**
 - It is very important that the name in the input assignments is the same as the name in the output assignments i.e. orderInfo_in
 
 Request Offer Output
@@ -118,8 +125,12 @@ Request Offer Output
 
 ![RequestOfferAssignments]({% image_path m1p7i28_RequestOfferAssignments.png %})
 
-- Now click the **OK** button
+- Click on the **Request Offer** task and click on the mini icon **Create Sequence Flow**
+- Drag the sequence flow to connect the **Request Offer** task to the **Prepare Offer** task
+- Click on the **Sequence Flow** to create a bending point
+- Click on the bending point and drag it along tha canvas (across lanes) to shape the **Sequence Flow** as shown in the below screenshots
 
+![PrepareOfferSequenceFlow]({% image_path m1p7i31_PrepareOfferSequenceFlow.png %})
 
 ### 1.6.4 Configure Prepare Offer user task
 
@@ -157,5 +168,5 @@ Remember to save your progress
 
 - At this point you have modelled the process for a happy scenario where the asset will always get approved, as part of module 2 excercise you will enrich this process to use business rules to evaluate the received offers and approve or reject offers accordingly
 - In the next excercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead an mark Exercise 3 Process Modelling as complete for your user in the etherpad 
+- Well done! Now go ahead an mark Exercise 3 Process Modelling as complete for your user in the googles sheet 
 
