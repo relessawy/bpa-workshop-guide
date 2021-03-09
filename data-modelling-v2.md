@@ -10,13 +10,13 @@ In this workshop, we will create a new data object to capture the order informat
 
 ![AddAsset]({% image_path AddAssetButton.png %})
 
-- In the drop-down menu in the upper-left corner, select **Model**. 
+- In the drop-down menu in the upper-left corner, select **Model**
 
-![AddModelMenu]({% image_path m1p6i1_AddModelMenu.png %})
+![AddModelMenu]({% image_path m1p6i2_DataObjectTile.png %})
 
 - Click on the **Data Object** tile
 
-![DataObjectTile]({% image_path m1p6i2_DataObjectTile.png %}){:width="600px”}
+![DataObjectTile]({% image_path DataObjectTile.png %}){:width="600px”}
 
 - Fill in the data object details as follows and then click the **+OK** button
     - **Name**: OrderInfo
@@ -88,6 +88,7 @@ This has saved your changes and created a save entry called a Commit into the in
 ---
 
 - Congratulations!  You’ve just created your first asset in **Red Hat Process Automation Manager**
+- Now mark excercise 2 Data Modeling as complete in the etherpad for your user.
 - We are now ready to start with our process design, let’s get started!
 
 
