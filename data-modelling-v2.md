@@ -88,7 +88,7 @@ This has saved your changes and created a save entry called a Commit into the in
 ---
 
 - Congratulations!  You’ve just created your first asset in **Red Hat Process Automation Manager**
-- Now mark excercise 2 Data Modeling as complete in the etherpad for your user.
+- Now mark Excercise 2 Data Modeling as complete in the etherpad for your user.
 - We are now ready to start with our process design, let’s get started!
 
 
