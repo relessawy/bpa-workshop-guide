@@ -53,6 +53,8 @@ In this section we are going to create the **Process Start** and **Request Offer
 Remember to save your form.
 ---
 
+---
+
 - Your form should now look like this screenshot
 
 ![FinishedStartForm]({% image_path m2p3i13_FinishedStartForm.png %})
@@ -147,6 +149,8 @@ Remember to save your form.
 ![Save]({% image_path m0_save.png %}){:align="left"}
 
 Remember to save your form.
+---
+
 ---
 
 - Now mark Excercise 4 Form Modeling as complete for your user in the etherpad.
