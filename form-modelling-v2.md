@@ -4,7 +4,7 @@ In this section we are going to create the **Process Start** and **Request Offer
 
 ### 1.7.1 Create Process Start form
 
-- Let’s start by modeling thethe form that triggers the process to start
+- Let’s start by modeling the form that triggers the process to start
 - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project
 - click on the **Add Asset** button to the top right of the screen.
 
@@ -126,7 +126,7 @@ Remember to save your form.
 - Provide the following input
   - Form: Leave empty, this will be auto populated
   - Package: Leave default value
-  - Keep the Business PProcess radio box selected
+  - Keep the Business Process radio box selected
   - Select Process: select **OrderAsset** from the drop down list
   - Select Form: select **Task Form for Request Offer**
   - Click the **+Ok** button
@@ -137,7 +137,7 @@ Remember to save your form.
 - Drag the **orderinfo_in** component to the form
 - In the Field Properties dialog, change the following fields
   - Change the label to be **Request Order Form**
-  - Expand the **Nested Form** drop down list and select the value **com_myspace_procurement_process_OrderInfo**
+  - Expand the **Nested Form** drop down list and select the value **OrderForm-RequestAsset**
 - Click the **+Ok** button
 
 ---
@@ -146,7 +146,10 @@ Remember to save your form.
 Remember to save your form.
 ---
 
-- Now mark Excercise 4 Form Modeling as complete in the etherpad for your user.
+ - Now mark Excercise 4 Form Modeling as complete for your user in the etherpad.
+ - In the next exercise we will get to see our process in action as we test the first use case 
+
+
 
 
 
