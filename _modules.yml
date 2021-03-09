@@ -13,8 +13,10 @@ modules:
   data-modelling-v2:
     name: Exercise 2 Data Modelling
   process-modelling-v2:
-    name: Excercise 3 Process Modelling
+    name: Exercise 3 Process Modelling
   form-modelling-v2:
-    name: Excercise 4 Form Modelling
+    name: Exercise 4 Form Modelling
+  run-process-v2:
+    name: Exercise 5 Deploy and Run the process
   finish:
     name: Conclusion
