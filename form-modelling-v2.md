@@ -153,7 +153,7 @@ Remember to save your form.
 
 ---
 
-- Now mark Excercise 4 Form Modeling as complete for your user in the etherpad.
+- Now mark Excercise 4 Form Modeling as complete for your user in the google sheet.
 - In the next exercise we will get to see our process in action as we test the first use case 
 
 
