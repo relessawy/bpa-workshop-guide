@@ -93,7 +93,7 @@
 ![ProcessDesignAtManualApproval]({% image_path testProcessFinished.png %})
 
 
-- This concludes the exercises for module, please go ahead and mark exercise 5 Deploy and Run the process as completed in the etherpad.
+- This concludes the exercises for module, please go ahead and mark exercise 5 Deploy and Run the process as completed in the googles sheet.
 
 
 
