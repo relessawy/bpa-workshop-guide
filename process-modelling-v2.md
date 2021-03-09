@@ -1,4 +1,4 @@
-# Process Modelling (10 mins)
+# Process Modelling (15 mins)
 
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
@@ -30,6 +30,7 @@ For the remainder part of this workshop we are going to refer to Red Hat Process
 ![AddProcessMenu]({% image_path m1p7i5_AddProcessMenu.png %})
 
 - Click on the **OrderAsset** business process to load the process in your **Process Designer**
+- This is how your process will look like when you finish this exercise, at this point it will be still mising some nodes and configurations
 
 ![OrderAssetProcess]({% image_path OrderAssetProcess.png %})
 
