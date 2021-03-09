@@ -14,7 +14,7 @@ modules:
     name: Exercise 2 Data Modelling
   process-modelling-v2:
     name: Excercise 3 Process Modelling
-  process-modelling_cont:
-    name: Process Modelling Cont.
+  form-modelling-v2:
+    name: Excercise 4: Form Modelling
   finish:
     name: Conclusion
