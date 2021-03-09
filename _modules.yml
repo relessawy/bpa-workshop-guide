@@ -15,6 +15,6 @@ modules:
   process-modelling-v2:
     name: Excercise 3 Process Modelling
   form-modelling-v2:
-    name: Excercise 4: Form Modelling
+    name: Excercise 4 Form Modelling
   finish:
     name: Conclusion
