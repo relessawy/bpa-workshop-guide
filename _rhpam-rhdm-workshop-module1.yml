@@ -34,4 +34,5 @@ modules:
   - data-modelling-v2
   - process-modelling-v2
   - form-modelling-v2
+  - run-process-v2
   - finish
