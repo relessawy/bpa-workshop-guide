@@ -29,8 +29,8 @@ modules:
   activate:
   - intro
   - components-overview
+  - use-case-overview
   - import-project-v2
-  - create-new-project
   - data-modelling-v2
   - process-modelling-v2
   - form-modelling-v2
