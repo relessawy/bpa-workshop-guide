@@ -39,6 +39,6 @@ To define and deploy a business process, we first need to have a project in whic
 ![IndexingProject]({% image_path IndexingProject.png %}){:width="600px”}
 
 - Your project is now ready to start modelling the different assets of your process, in the next exercise we will start by creating our data model
-- Go ahead an mark **Exercise 1 Import Porject** as complete for your user in the etherpad
+- Go ahead an mark **Exercise 1 Import Porject** as complete for your user in the googles sheet.
 
 
