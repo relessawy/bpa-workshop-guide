@@ -6,7 +6,10 @@ With the project imported, we can now start building our solution starting with 
 
 In this workshop, we will create a new data object to capture the order information.
 
-- In your project, click on the **Add Asset** button in the middle of the screen.
+- In your project, click on the **Add Asset** button to the top right of the screen.
+
+![AddAsset]({% image_path AddAssetButton.png %})
+
 - In the drop-down menu in the upper-left corner, select **Model**. 
 
 ![AddModelMenu]({% image_path m1p6i1_AddModelMenu.png %})
