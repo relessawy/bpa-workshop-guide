@@ -12,8 +12,8 @@ modules:
     name: Create New Project
   data-modelling-v2:
     name: Exercise 2 Data Modelling
-  process-modelling:
-    name: Process Modelling
+  process-modelling-v2:
+    name: Excercise 3 Process Modelling
   process-modelling_cont:
     name: Process Modelling Cont.
   finish:
