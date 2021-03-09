@@ -1,4 +1,4 @@
-# Process Modelling (30 mins)
+# Process Modelling (15 mins)
 
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
@@ -154,98 +154,8 @@ Remember to save your progress
 
 ---
 
-### 1.6.7 Create AutoApproval business rule task 
 
-- In this step we will create the task that calls the business rule to decide whether the order can be auto -approved or not
-- In the palette on the left-side of the editor, click on the **Tasks** icon then select the Business Rule task
-
- ![businessRuleTaskMenu]({% image_path m1p7i35_businessRuleTaskMenu.png %})
-
-- Click within the **System** lane to place the User task
-- Double click to give it the name **Auto Approval**
-- Click on the **Prepare Offer** task and click on the mini icon **Create Sequence Flow**
-- Drag the sequence flow to connect the **Prepare Offer** task to the **Auto Approval** task and shape it like in the following screenshot
-
-  ![AutoApprovalFlow]({% image_path m1p7i36_AutoApprovalFlow.png %})
-  
-- Select the  **Auto Approval** node, and then open the **Properties** pane for this node
-- Expand the **Implementation/Execution** section
-- Set **Rule language** to **DMN**
-- Now expand the **Data Assignments** section and provide the following assignments and then click the **Ok** button
-
-**Auto Approval Data Inputs**
-
-|      Name         |    Data Type   |      Source   |
-|     :---:         |     :---:      |     :---:     |
-| Order Information | OrderInfo      | orderInfo     |
-
-**Auto Approval Data Outputs**
-
-|      Name    |    Data Type   |      Target   |
-|     :---:    |     :---:      |     :---:     |
-| Approve      |   Boolean     |   approved     |
-
----
-![Info]({% image_path m0_info.png %}){:align="left"} 
-
-In module 2 after we finish modeling our rules, we will revisit the configuration of this node to reference the rule we create
-
----
-
-
-### 1.6.8 Create Check Auto Approval gateway
-
-- We will now create a diverging bridge to allow the process to progress in one of two directions:
- - Auto Approval is true -> Go ahead and insert the order in the [Enterprise Resource System (ERP)](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
- - Auto Approval is false -> Assign the order to the **Purchasing Manager** for review 
-- Click on the **Auto Approval** task to show it’s mini icons
-- Click on **Create Parallel**
-- Click on the newly created gateway to show it’s mini icons
-- Use it’s configuration icon (the one below the gateway) to convert it into an **Exclusive Gateway (X-OR)** by clicking on the **Convert Into Exclusive** icon
-- Name this X-OR gate: **Check Auto Approval**
-
-![CreateAutoApprovalTask]({% image_path m1p7i39_CreateAutoApprovalTask.png %})
-
-### 1.6.9 Import Complete Project
-
-- Now that you've had a chance to try the **Process Designer**, you can do one of two things
-  - Import the full project, skip module 1 part 7 and move on to module 2 (Recommended)
-  - Continue to build the process step by step in module 1 part 7
- 
- 
-- In this section we will guide you through the steps to import the complete project, if you want to build the process yourself skip this section and move on to module 1 part 7
-   - Before you import the full **OrderAsset** process, you will need to delete the one you already created. It's a good idea to keep a copy of your process
-   - Download the process you created by clicking the **Download** button in the upper menu
-   - Delete the the current **OrderAsset** process by clicking the **Delete** button in the upper menu
-  
-  ![DownloadDelete]({% image_path m1p7i91_Download_Delete.png %})
-  
-  - Download the full process from [here](https://drive.google.com/file/d/1VMdU5T16dRBYqIAQz9JnYoi5O3INWnx7/view?usp=sharing)
-  - If you are not already in the  **procurement-process** project view, use the **breadcrumb navigator** at the top-left of the screen to navigate there
-  - Click on the **Import Asset** button 
-  - Select the **Choose File** button, below the **Please select a file to upload** field
-  
-  ![ChooseFile]({% image_path m1p7i90_choosefile.png %})
-
-- Select the OrderAssetComplete.bpmn from the path you downloaded the file to, then click the **Open** button
-- Provide the name **OrderAsset** in the **Import Asset** field
-- Click the **+OK** button
-
-![ImportProcess]({% image_path m1p7i92_ImportProcess.png %})
-
-Note: Name of the downloaded file may be different from this screenshot
-
----
-![Save]({% image_path m0_save.png %}){:align="left"} 
-
-Remember to save your progress 
-
----
-
-Your finished process diagram should like something like this
-
-
-![FinalFlow]({% image_path m1p7i52_FinalFlow.png %})
-
-With the overall layout of the process definition complete, the routing logic implemented, and the I/O assignments defined, we can now implement the business rules of our automated approval decision.
+- At this point you have modelled the process for a happy scenario where the asset will always get approved, as part of module 2 excercise you will enrich this process to use business process to evaluate the received offers and approve or reject offers accordingly
+- In the next excercise you will start creating the forms that allow a use to interact with a task in the process
+- Well done! Now go ahead an mark Exercise 3 Process Modelling as complete in the etherpad for your user
 
