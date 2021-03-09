@@ -8,8 +8,8 @@ modules:
     name: RHPAM Components and Architecture
   use-case-overview:
     name: Use Case Introduction
-  create-new-project:
-    name: Create New Project
+  import-project-v2:
+    name: Exercise 1 Import Project
   data-modelling-v2:
     name: Exercise 2 Data Modelling
   process-modelling-v2:
