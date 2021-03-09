@@ -75,6 +75,7 @@ Remember to save your form.
   - Select Data Object from project: select **com.myspace.procurement_process.OrderInfo** from the drop down list
 - Click the **+OK** button
 
+---
 
 - You are now in the **Form Modeler** view
 - Expand the Model Fileds list to the left of the **Form Modeler**
@@ -118,6 +119,8 @@ Remember to save your form.
 
 ![CompletedRequestForm]({% image_path CompletedRequestForm.png %})
 
+---
+
 - Save your form 
 - Navigate back to the **procurement-process** project 
 - click on the **Add Asset** button to the top right of the screen.
@@ -146,8 +149,8 @@ Remember to save your form.
 Remember to save your form.
 ---
 
- - Now mark Excercise 4 Form Modeling as complete for your user in the etherpad.
- - In the next exercise we will get to see our process in action as we test the first use case 
+- Now mark Excercise 4 Form Modeling as complete for your user in the etherpad.
+- In the next exercise we will get to see our process in action as we test the first use case 
 
 
 
