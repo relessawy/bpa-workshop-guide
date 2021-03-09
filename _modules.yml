@@ -11,7 +11,7 @@ modules:
   create-new-project:
     name: Create New Project
   data-modelling:
-    name: Data Modelling
+    name: Exercise 2: Data Modelling
   process-modelling:
     name: Process Modelling
   process-modelling_cont:
