@@ -10,7 +10,7 @@ modules:
     name: Use Case Introduction
   create-new-project:
     name: Create New Project
-  data-modelling:
+  data-modelling-v2:
     name: Exercise 2: Data Modelling
   process-modelling:
     name: Process Modelling
