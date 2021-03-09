@@ -32,6 +32,6 @@ modules:
   - use-case-overview
   - create-new-project
   - data-modelling-v2
-  - process-modelling
+  - process-modelling-v2
   - process-modelling_cont
   - finish
