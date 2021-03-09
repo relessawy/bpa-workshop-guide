@@ -155,7 +155,7 @@ Remember to save your progress
 ---
 
 
-- At this point you have modelled the process for a happy scenario where the asset will always get approved, as part of module 2 excercise you will enrich this process to use business process to evaluate the received offers and approve or reject offers accordingly
+- At this point you have modelled the process for a happy scenario where the asset will always get approved, as part of module 2 excercise you will enrich this process to use business rules to evaluate the received offers and approve or reject offers accordingly
 - In the next excercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead an mark Exercise 3 Process Modelling as complete in the etherpad for your user
+- Well done! Now go ahead an mark Exercise 3 Process Modelling as complete for your user in the etherpad 
 
