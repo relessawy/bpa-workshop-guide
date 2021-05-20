@@ -127,6 +127,7 @@ Request Offer Output
 ![RequestOfferAssignments]({% image_path m1p7i28_RequestOfferAssignments.png %})
 
 - Click on the **Request Offer** task and click on the mini icon **Create Sequence Flow**
+![CreateSequenceFlow]({% image_path create_squence_flow.png %})
 - Drag the sequence flow to connect the **Request Offer** task to the **Prepare Offer** task
 - Click on the **Sequence Flow** to create a bending point
 - Click on the bending point and drag it along tha canvas (across lanes) to shape the **Sequence Flow** as shown in the below screenshots
