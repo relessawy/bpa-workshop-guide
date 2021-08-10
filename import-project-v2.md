@@ -4,7 +4,7 @@ To define and deploy a business process, we first need to have a project in whic
 
 ## To import a  project
 
-- Navigate to **Business Central** (URL provided by your instructor in the etherpad)
+- Navigate to **Business Central** (URL provided by your instructor in the google sheet)
 - Login using the following credentials
     - `pamAdmin`
     - `redhatpam1!`
