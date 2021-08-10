@@ -80,6 +80,7 @@
 
 - Click on the Prepare Offer task in your inbox, then click the **Start** button
 - Enter 130 for SupplierPrice
+- Do not worry about the Supplier Name, it has been intentionally left out of this lab
 - Click the **Complete** button
 
 ![PrepareOfferTaskComplete]({% image_path m2p6i14_PrepareOfferTaskComplete.png %})
