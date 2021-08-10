@@ -4,7 +4,12 @@ With the project imported, we can now start building our solution starting with 
 
 ### 1.5.1 Create Data Object
 
-In this workshop, we will create a new data object to capture the order information.
+- In this workshop, we will create a new data object to capture the order information. This data object will have five attributes
+    -  Item Name: The name of the item we want to order
+    -  Supplier Name: The name of the supplier to provide the offer
+    -  Urgency: The level of urgency for this order, this can be either high or low
+    -  Target Price: The desired price for purchasing the item as determined by the procurement department
+    -  Supplier Price: The price provided in the supplier's offer
 
 - In your project, click on the **Add Asset** button to the top right of the screen.
 
@@ -88,7 +93,7 @@ This has saved your changes and created a save entry called a Commit into the in
 ---
 
 - Congratulations!  You’ve just created your first asset in **Red Hat Process Automation Manager**
-- Now mark Excercise 2 Data Modeling as complete for your user in the googles sheet.
+- Now mark Exercise 2 Data Modeling as complete for your user in the googles sheet.
 - We are now ready to start with our process design, let’s get started!
 
 
