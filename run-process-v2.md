@@ -1,12 +1,12 @@
 # Deploy and Run the Process (5 mins)
 
-### 1.8.1 Deply the process
+### 1.8.1 Deploy the process
 
 - With our process, data model and forms ready, we can now package our project and deploy it on the Execution Server. To do this:
 - Go back to our project’s Library View, by clicking on the **procurement-process** link in the breadcrumb navigation in the upper-left of the screen.
 - Click on the **Deploy** button in the upper-right corner of the screen. This will package our project in a Deployment Unit called KJAR and deploy it onto the Execution Server (KIE-Server).
 
-![DeployProces]({% image_path m2p4_DeployProcess.png %})
+![DeployProcess]({% image_path m2p4_DeployProcess.png %})
 
 - If all goes well, you'll see two green pop-ups verifying the deployment
 
@@ -45,7 +45,7 @@
 ![TaskInbox]({% image_path m2p6i6_TaskInbox.png %})
 
 
-- Remeber when we set the actor for the **Request Offer** task to pamAdmin (your user) in the process model?  This is why **RH PAM** assigned this task to your user and notified you with meassage in your inbox
+- Remember when we set the actor for the **Request Offer** task to pamAdmin (your user) in the process model?  This is why **RH PAM** assigned this task to your user and notified you with message in your inbox
 
 ![RequestOfferTask]({% image_path m2p6i7_RequestOfferTask.png %})
 
@@ -87,13 +87,15 @@
 - Navigate to Menu-> Manage ->Process Instance
 - In the **Filters** to left select the **Completed** status to be part of the **Active filters**
 - The **Order Asset** will now appear, click on it's process instance
-- In the Process Instance scree, click on the **Diagram** tab
-- Notice that because the supplier's offer was approved the process reached the end stae **Send to ERP**
+- In the Process Instance screen, click on the **Diagram** tab
+- Notice that because the supplier's offer was approved the process reached the end state **Send to ERP**
 
 ![ProcessDesignAtManualApproval]({% image_path testProcessFinished.png %})
 
 
-- This concludes the exercises for module, please go ahead and mark exercise 5 Deploy and Run the process as completed in the googles sheet.
+- This concludes the exercises for this module, please go ahead and mark exercise 5 Deploy and Run the process as completed in the googles sheet.
+
+
 
 
 
