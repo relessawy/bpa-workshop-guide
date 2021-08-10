@@ -27,7 +27,7 @@ For the remainder  of this workshop we are going to refer to Red Hat Process Aut
 
 - In the drop-down menu in the upper-left corner, select Process
 
-![AddProcessMenu]({% image_path m1p7i5_AddProcessMenu.png %})
+![AddProcessMenu]({% image_path FindProcessMenu.png %})
 
 - Click on the **OrderAsset** business process to load the process in your **Process Designer**
 - This is how your process will look like when you finish this exercise, at this point it will be still missing some nodes and configurations
