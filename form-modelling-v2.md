@@ -4,7 +4,7 @@ In this section we are going to create the **Process Start** and **Request Offer
 
 ### 1.7.1 Create Process Start form
 
-- Let’s start by modeling the form that triggers the process to start
+- Let’s start by modelling the form that triggers the process to start
 - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project
 - click on the **Add Asset** button to the top right of the screen.
 
@@ -22,7 +22,7 @@ In this section we are going to create the **Process Start** and **Request Offer
   - Click the **+Ok** button
 
 ![StartForm]({% image_path m2p3i9_StartForm.png %})
-- In the **Form Modeler** expand the **Form Controls** sections to the left
+- In the **Form Modeller** expand the **Form Controls** sections to the left
 
 ![HTMLControl]({% image_path m2p3i16_HTMLControl.png %})
 
@@ -33,7 +33,7 @@ In this section we are going to create the **Process Start** and **Request Offer
 - Enter the following URL in the **Image:** field
 `https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg`
 
-- **Alignment**: Default 
+- **Alignment**: Default
 - Remove the text "Add your HTML here..." at the bottom
 - Click the **OK** button
 
@@ -42,7 +42,7 @@ In this section we are going to create the **Process Start** and **Request Offer
 - Drag another HTML control to the canvas, in the white area below the image HTML you just created
 - Type "To start the procurement process click on the Submit button"
 - Highlight the text
-- Modify your text format to H3 + Bold 
+- Modify your text format to H3 + Bold
 - Click the **OK** button
 
 ![TextDialog]({% image_path m2p3i12_TextDialog.png %})
@@ -79,8 +79,8 @@ Remember to save your form.
 
 ---
 
-- You are now in the **Form Modeler** view
-- Expand the Model Fields list to the left of the **Form Modeler**
+- You are now in the **Form Modeller** view
+- Expand the Model Fields list to the left of the **Form Modeller**
 
 ![ModelFieldsList]({% image_path ModelFieldsList.png %})
 
@@ -98,12 +98,12 @@ Remember to save your form.
 
 - Now drag the **urgency** filed from the list to your form below the **item** field
 - Change the properties of the **item** field as follows
-  - Field Type: Radio Group 
+  - Field Type: Radio Group
   - Click the **+New Instance** button, provide the input **low** for both the **Value** and **Text** fields, then press the **Accept** button
   - Once again click the **+New Instance** button, provide the input **high** for both the **Value** and **Text** fields, then press the **Accept** button
   - Check the **Show Options inline** checkbox
   - Check the **Required** checkbox
-  - Help Message: Level of request urgency, high or low. 
+  - Help Message: Level of request urgency, high or low.
   - Click the **+OK** button
 
 ![UrgencyFieldProperties]({% image_path UrgencyFieldProperties.png %})
@@ -123,8 +123,8 @@ Remember to save your form.
 
 ---
 
-- Save your form 
-- Navigate back to the **procurement-process** project 
+- Save your form
+- Navigate back to the **procurement-process** project
 - click on the **Add Asset** button to the top right of the screen.
 - In the drop-down menu in the upper-left corner, select **Form**
 - Click on the **Form** tile
@@ -138,11 +138,9 @@ Remember to save your form.
 
 ![RequestFormDialog]({% image_path RequestFormDialog.png %})
 
-- In the **Form Modeler** view, expand the Model Fields list to the left of the **Form Modeler**
+- In the **Form Modeller** view, expand the Model Fields list to the left of the **Form Modeller**
 - Drag the **orderinfo_in** component to the form
-- In the Field Properties dialog, change the following fields
-  - Change the label to be **Request Order Form**
-  - Expand the **Nested Form** drop down list and select the value **OrderForm-RequestAsset**
+- In the Field Properties dialog, change the label to be **Request Order Form**
 - Click the **+Ok** button
 
 ---
@@ -153,25 +151,5 @@ Remember to save your form.
 
 ---
 
-- Now mark Exercise 4 Form Modeling as complete for your user in the google sheet.
-- In the next exercise we will get to see our process in action as we test the first use case 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Now mark Exercise 4 Form Modelling as complete for your user in the google sheet.
+- In the next exercise we will get to see our process in action as we test the first use case
