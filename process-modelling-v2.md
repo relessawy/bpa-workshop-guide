@@ -38,7 +38,7 @@ For the remainder  of this workshop we are going to refer to Red Hat Process Aut
 
 - Our process will manipulate two variables throughout it’s execution
   - The **OrderInfo** data object that we created in part 1.5.1 of this module.
-  - A variable **approved**, that will hold the result of evaluating the supplier's offer. The result can either be true or false, this type of variable is called a boolean variable
+  - A variable called **approved**, that will hold the result of evaluating the supplier's offer. The result can either be true or false, this type of variable is called a boolean variable
 - Open the properties editor for our process
   - Firstly click your mouse anywhere on the blank canvas of the editing screen (outside of the swimlanes). This will ensure you are editing the properties of the entire process rather than the variables of one element.
   - hover on top right pencil icon in designer
@@ -168,7 +168,8 @@ Remember to save your progress
 ---
 
 
-- At this point you have modelled the process for a happy scenario where the asset will always get approved, as part of module 2 exercises you will enrich this process to use business rules to evaluate the received offers and approve or reject offers accordingly
+- At this point you have modelled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true
+- As part of module 2 exercises you will enrich this process to use business rules to evaluate the received offers, and approve or reject offers accordingly
 - In the next exercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead and mark Exercise 3 Process Modelling as complete for your user in the googles sheet 
+- Well done! Now go ahead and mark Exercise 3 Process Modelling as complete for your user in the google sheet 
 
