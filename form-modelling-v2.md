@@ -141,6 +141,7 @@ Remember to save your form.
 - In the **Form Modeller** view, expand the Model Fields list to the left of the **Form Modeller**
 - Drag the **orderinfo_in** component to the form
 - In the Field Properties dialog, change the label to be **Request Order Form**
+- In the **Nested Form** drop down list, select **OrderForm-RequestAsset**
 - Click the **+Ok** button
 
 ---
