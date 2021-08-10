@@ -28,21 +28,21 @@ To define and deploy a business process, we first need to have a project in whic
 
 - In the **Repository URL** filed provide the following URL: https://github.com/relessawy/procurement-process
 - Click on the **Import** button
-- Now click on the **procurment-process** tile to select it, then click on the **Ok** button to the top right
+- Now click on the **procurement-process** tile to select it, then click on the **Ok** button to the top right
     
 ![ImportProject]({% image_path ImportProject.png %}){:width="600px”}
 
 
 
-- It may take a few minutes for the project to be fully loaded, you will see this screen as **RH PAM** organizes the imported assests
+- It may take a few minutes for the project to be fully loaded, you will see this screen as **RH PAM** organizes the imported assets
 
 ![IndexingProject]({% image_path IndexingProject.png %}){:width="600px”}
 
-- Once your project is successfully imported, it will look like the following screen shot
+- Once your project is successfully imported, it will look like the following screenshot.
 
 ![ImportedProject]({% image_path imported_project.png %}){:width="600px”}
 
 - We are now ready to start modelling the different assets of our process, in the next exercise we will start by creating our data model
-- Go ahead an mark **Exercise 1 Import Porject** as complete for your user in the google sheet.
+- Go ahead and mark **Exercise 1 Import Project** as complete for your user in the google sheet.
 
 
