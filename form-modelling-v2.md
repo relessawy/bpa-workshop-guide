@@ -15,7 +15,7 @@ In this section we are going to create the **Process Start** and **Request Offer
 - In the **Create new Form** dialog, provide the following input
   - Form: Leave empty, this will be auto populated when you finish select the business process
   - Package: Leave default value
-  - Keep the Business Prrocess radio box selected
+  - Keep the Business Process radio box selected
   - Select Process: select **OrderAsset** from the drop down list
   - Select Form: select **Start Process Form**
   - Do not change the Form name that is generated for you
@@ -80,7 +80,7 @@ Remember to save your form.
 ---
 
 - You are now in the **Form Modeler** view
-- Expand the Model Fileds list to the left of the **Form Modeler**
+- Expand the Model Fields list to the left of the **Form Modeler**
 
 ![ModelFieldsList]({% image_path ModelFieldsList.png %})
 
@@ -138,7 +138,7 @@ Remember to save your form.
 
 ![RequestFormDialog]({% image_path RequestFormDialog.png %})
 
-- In the **Form Modeler** view, expand the Model Fileds list to the left of the **Form Modeler**
+- In the **Form Modeler** view, expand the Model Fields list to the left of the **Form Modeler**
 - Drag the **orderinfo_in** component to the form
 - In the Field Properties dialog, change the following fields
   - Change the label to be **Request Order Form**
@@ -153,7 +153,7 @@ Remember to save your form.
 
 ---
 
-- Now mark Excercise 4 Form Modeling as complete for your user in the google sheet.
+- Now mark Exercise 4 Form Modeling as complete for your user in the google sheet.
 - In the next exercise we will get to see our process in action as we test the first use case 
 
 
