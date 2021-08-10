@@ -58,17 +58,17 @@
 - **Item name**: macbook pro
 - **Urgency**: high
 - **Target Price**: 100
-- Then click the Complete button  
+- Then click the **Complete** button  
 
-- Navigate to Menu-> Manage ->Process Instance
+- Navigate to Menu-> Manage ->Process Instances
 - Click on the **OrderAsset** process instance
 
 ![OrderAssetProcessInstance]({% image_path m2p6i10_OrderAssetProcessInstance.png %})
 
 - In the Process Instance screen, click on the **Diagram** tab
-- The process has now progressed to the **Prepare Order** task node. 
+- The process has now progressed to the **Prepare Offer** task node. 
 
-![ProcessProgressToPrepareOffer]({% image_path ProcessDiagram_PrepareOfferr.png %})
+![ProcessProgressToPrepareOffer]({% image_path ProcessDiagram_PrepareOffer.png %})
 
 - You can also click on the Logs tab to get more details on which user claimed a task, when it was started, updated, and completed
 
