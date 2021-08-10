@@ -85,7 +85,7 @@
 
 ![PrepareOfferTaskComplete]({% image_path m2p6i14_PrepareOfferTaskComplete.png %})
 
-- Navigate to Menu-> Manage ->Process Instance
+- Navigate to Menu-> Manage ->Process Instances
 - In the **Filters** to left select the **Completed** status to be part of the **Active filters**
 - The **Order Asset** will now appear, click on it's process instance
 - In the Process Instance screen, click on the **Diagram** tab
@@ -94,7 +94,7 @@
 ![ProcessDesignAtManualApproval]({% image_path testProcessFinished.png %})
 
 
-- This concludes the exercises for this module, please go ahead and mark exercise 5 Deploy and Run the process as completed in the googles sheet.
+- This concludes the exercises for this module, please go ahead and mark **exercise 5 Deploy and Run**  as completed in the google sheet.
 
 
 
