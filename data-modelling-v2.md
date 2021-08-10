@@ -83,7 +83,7 @@ If you make a mistake, you can edit the fields by clicking into the field you wa
 
 - When you’ve added all the fields, save the data object by clicking on the Save button in the top menu.
 
-![SaveDataObject]({% image_path m1p6i9_SaveDataObject.png %}){:width="600px”}
+![SaveDataObject]({% image_path SaveDataObject.png %}){:width="600px”}
 
 ---
 ![Info]({% image_path m0_info.png %}){:align="left"} 
