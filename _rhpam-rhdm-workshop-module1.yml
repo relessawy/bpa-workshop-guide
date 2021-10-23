@@ -1,5 +1,5 @@
 id: "rhpam_rhdm"
-name: "RHPAM / RHDM Workshop 2020 - Module 1"
+name: "Business Process Automation - Workshop Guide"
 
 content:
   url: https://raw.githubusercontent.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1m1-guides.git/master
@@ -27,12 +27,12 @@ vars:
 
 modules:
   activate:
-  - intro
-  - components-overview
-  - use-case-overview
-  - import-project-v2
-  - data-modelling-v2
-  - process-modelling-v2
-  - form-modelling-v2
+  - 1_intro
+  - 2_components-overview
+  - 3_use-case-overview
+  - 4_import-project
+  - 5_data-modeling
+  - process-modeling-v2
+  - form-modeling-v2
   - run-process-v2
   - finish
