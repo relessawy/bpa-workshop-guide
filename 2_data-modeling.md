@@ -4,7 +4,7 @@ With the project imported, we can now start building our solution starting with 
 
 ---
 
-### 5.1 Create Data Object
+### 2.1 Create Data Object
 
 - In this lab, we will create a new data object to capture the order information. This data object will have five attributes
 
@@ -43,7 +43,7 @@ With the project imported, we can now start building our solution starting with 
 
 ---
 
-### 5.2 Add fields to OrderInfo
+### 2.2 Add fields to OrderInfo
 
 ![DataModeller]({% image_path m1p6i4_DataModeller.png %}){:width="600px”}
 
@@ -62,17 +62,20 @@ With the project imported, we can now start building our solution starting with 
 ![AddFieldDialog]({% image_path m1p6i7_AddFieldDialog.png %}){:height="600px" width="700px"}
 
 - Add the first field **item** to the **OrderInfo** object, with the following details:
+
   - Id: item
   - Label: Item Name
   - Type: String
+
 - Click the **Create and Continue** button to continue adding fields
 
-
+---
 
 - Continue adding the **OrderInfo** object fields as shown in the table below
+- Be careful when selecting data types, make sure you select **float** and not **Float**
 - Once you provide the input for the last field **supplierPrice**, click **Create** instead of **Create and Continue**
 
-<p></p>
+<center>
 
 |  Identifier   |     Label      |  Type  |
 | :-----------: | :------------: | :----: |
@@ -82,19 +85,20 @@ With the project imported, we can now start building our solution starting with 
 |  targetPrice  |  Target Price  | float  |
 | supplierPrice | Supplier Price | float  |
 
+</center>
+
+---
+
+- Click on the **Source** tab, notice that as you add fields, **Red Hat Process Automation Manager (RH PAM)** generates the Java code on your behalf. This is an example of how **RH PAM** supports the developer’s persona, where a developer can collaborate with a business analyst using his/her favorite IDE to build the data model.
+
 ---
 
 ![Info]({% image_path m0_info.png %}){:align="left"}
 
-Click on the **Source** tab, notice that as you add fields, **Red Hat Process Automation Manager (RH PAM)** generates the Java code on your behalf. This is an example of how **RH PAM** supports the developer’s persona, where a developer can collaborate with a business analyst using his/her favourite IDE to build the data model.
-
----
-
-![Info]({% image_path m0_info.png %}){:align="left"}
-
-If you make a mistake, you can edit the fields by clicking into the field you want to modify and then the field properties will show on the right. In this case where the targetPrice was mistakenly created as a String, you can edit and change it to float as desired.
-
+If you make a mistake, you can edit the fields by clicking into the field you want to modify and then the field properties will show on the right. In this case where the targetPrice was mistakenly created as a String, you can edit and change it to float as desired
+<br>
 ![EDITFIELD]({% image_path m1p6i8_EditField.png %}){:width="600px”}
+<br>
 
 ---
 

@@ -4,7 +4,7 @@ To define and deploy a business process, we first need to have a project in whic
 
 ---
 
-## 4.1 To import a project
+## 1.1 To import a project
 
 - Navigate to **Business Central** (URL provided by your instructor in the Google sheet)
 - Login using the following credentials

@@ -27,12 +27,9 @@ vars:
 
 modules:
   activate:
-  - 1_intro
-  - 2_components-overview
-  - 3_use-case-overview
-  - 4_import-project
-  - 5_data-modeling
-  - process-modeling-v2
+  - 1_import-project
+  - 2_data-modeling
+  - 3_process-modeling
   - form-modeling-v2
   - run-process-v2
   - finish

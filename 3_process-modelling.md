@@ -1,4 +1,4 @@
-# Process Modelling (15 mins)
+# Process Modeling (15 mins)
 
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
@@ -10,16 +10,15 @@
 
 ![Scenario1]({% image_path m1p7i1_Scenario1.png %})
 
-
----
-![Info]({% image_path m0_info.png %}){:align="left"} 
-
-For the remainder  of this workshop we are going to refer to Red Hat Process Automation Manager by it’s short name **RH PAM**. 
-
 ---
 
+![Info]({% image_path m0_info.png %}){:align="left"}
 
-### 1.6.1 Explore OrderAsset process
+For the remainder of this workshop we are going to refer to Red Hat Process Automation Manager by it’s short name **RH PAM**.
+
+---
+
+### 3.1 Explore OrderAsset process
 
 - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
 
@@ -43,17 +42,17 @@ For the remainder  of this workshop we are going to refer to Red Hat Process Aut
   - Firstly click your mouse anywhere on the blank canvas of the editing screen (outside of the swimlanes). This will ensure you are editing the properties of the entire process rather than the variables of one element.
   - hover on top right pencil icon in designer
   - click to open the **Properties pane** on the right
- 
- ![PropertiesPane]({% image_path PropertiesPane.png %})
+
+![PropertiesPane]({% image_path PropertiesPane.png %})
 
 - Scroll down in the property panel on the right side of the screen, until you see the section **Process Data**.
-![ProcessVariables]({% image_path m1p7i10_ProcessVariables.png %})
-
+  ![ProcessVariables]({% image_path m1p7i10_ProcessVariables.png %})
 
 ---
-![Info]({% image_path m0_info.png %}){:align="left"} 
 
-HINT: Don’t see a process data screen like this? 
+![Info]({% image_path m0_info.png %}){:align="left"}
+
+HINT: Don’t see a process data screen like this?
 If you see something that looks like the screen below, then you will need to select the BPMN canvas. Just click your mouse anywhere in that blank on the editing grid.
 
 ![WrongProperties]({% image_path m1p7i11_WrongProperties.png %})
@@ -67,13 +66,12 @@ If you see something that looks like the screen below, then you will need to sel
 
 - Define two process variables as shown in the following table:
 
-|      Name    |     Data Type  |
-|     :---:    |     :---:      |
-| orderInfo    | OrderInfo      |
-| approved     | Boolean        |
+|   Name    | Data Type |
+| :-------: | :-------: |
+| orderInfo | OrderInfo |
+| approved  |  Boolean  |
 
 - Your **Process Variables** should look like the following screenshot when your done:
-
 
 ![ProcessVariable]({% image_path m1p7i13_ProcessVariable.png %})
 
@@ -87,7 +85,7 @@ If you see something that looks like the screen below, then you will need to sel
 
 ![RequestOfferTask]({% image_path m1p7i21_RequestOfferTask.png %})
 
-- With the **Request Offer** node selected Open the **Properties pane** for this node 
+- With the **Request Offer** node selected Open the **Properties pane** for this node
 - Expand the **Implementation/Execution** section
 - Set the **Task Name** to: RequestOffer
 - Set the **Subject** to: Request Offer for #{orderInfo.item}
@@ -101,14 +99,14 @@ If you see something that looks like the screen below, then you will need to sel
 ![Assignments]({% image_path m1p6i70_assignments.png %})
 
 - This generates a pop-up: **Request Offer Data I/O** dialog
-- Click the **+Add** button next to **Data Inputs and Assignments** 
+- Click the **+Add** button next to **Data Inputs and Assignments**
 - Provide the input as follows:
 
 Request Offer Input
 
-|      Name    |    Data Type   |      Source   |
-|     :---:    |     :---:      |     :---:     |
-| orderInfo_in | OrderInfo      | orderInfo     |
+|     Name     | Data Type |  Source   |
+| :----------: | :-------: | :-------: |
+| orderInfo_in | OrderInfo | orderInfo |
 
 - You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. You are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
 - Now click the **+Add** button next to **Data Outputs and Assignments**
@@ -117,17 +115,16 @@ Request Offer Input
 
 Request Offer Output
 
-
-|      Name    |    Data Type   |      Target   |
-|     :---:    |     :---:      |     :---:     |
-| orderInfo_in | OrderInfo      | orderInfo     |
+|     Name     | Data Type |  Target   |
+| :----------: | :-------: | :-------: |
+| orderInfo_in | OrderInfo | orderInfo |
 
 - Your **RequestOffer Data I/O** should look something like this:
 
 ![RequestOfferAssignments]({% image_path m1p7i28_RequestOfferAssignments.png %})
 
 - Click on the **Request Offer** task and click on the mini icon **Create Sequence Flow**
-![CreateSequenceFlow]({% image_path create_squence_flow.png %})
+  ![CreateSequenceFlow]({% image_path create_squence_flow.png %})
 - Drag the sequence flow to connect the **Request Offer** task to the **Prepare Offer** task
 - Click on the **Sequence Flow** to create a bending point
 - Click on the bending point and drag it along tha canvas (across lanes) to shape the **Sequence Flow** as shown in the below screenshots
@@ -139,37 +136,33 @@ Request Offer Output
 - Now that the Purchasing Manager has requested an offer, the next step in our process is that the chosen Supplier prepares an offer
 - Let's configure the **Prepare Offer** user task
 
-- Similar to what we did before, click on the **Prepare Offer** task 
+- Similar to what we did before, click on the **Prepare Offer** task
 - With the **Prepare Offer** node selected, open the **Properties** pane for this node, and expand the **Implementation/Execution** section and set the the attributes as follows:
+
   - **Actors**: pamAdmin
   - **Assignments**: Same as before, and as per the following tables
- 
- **Prepare Offer Data Inputs**
 
+  **Prepare Offer Data Inputs**
 
-|      Name    |    Data Type   |      Source   |
-|     :---:    |     :---:      |     :---:     |
-| orderInfo_in | OrderInfo      | orderInfo     |
- 
- **Prepare Offer Data Outputs**
+|     Name     | Data Type |  Source   |
+| :----------: | :-------: | :-------: |
+| orderInfo_in | OrderInfo | orderInfo |
 
+**Prepare Offer Data Outputs**
 
-|      Name    |    Data Type   |      Target   |
-|     :---:    |     :---:      |     :---:     |
-| orderInfo_in | OrderInfo      | orderInfo     |
- 
- 
-
----
-![Save]({% image_path m0_save.png %}){:align="left"} 
-
-Remember to save your progress 
+|     Name     | Data Type |  Target   |
+| :----------: | :-------: | :-------: |
+| orderInfo_in | OrderInfo | orderInfo |
 
 ---
 
+![Save]({% image_path m0_save.png %}){:align="left"}
+
+Remember to save your progress
+
+---
 
 - At this point you have modelled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true
 - As part of module 2 exercises you will enrich this process to use business rules to evaluate the received offers, and approve or reject offers accordingly
 - In the next exercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead and mark Exercise 3 Process Modelling as complete for your user in the google sheet 
-
+- Well done! Now go ahead and mark Exercise 3 Process Modelling as complete for your user in the google sheet

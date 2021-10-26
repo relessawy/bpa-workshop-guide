@@ -2,20 +2,14 @@ config:
     renderer: markdown
 
 modules:
-  intro:
-    name: Introduction and Working Environment
-  components-overview:
-    name: RHPAM Components and Architecture
-  use-case-overview:
-    name: Use Case Introduction
-  import-project-v2:
+  1_import-project:
     name: Exercise 1 Import Project
-  data-modelling-v2:
-    name: Exercise 2 Data Modelling
-  process-modelling-v2:
-    name: Exercise 3 Process Modelling
+  2_data-modeling-v2:
+    name: Exercise 2 Data Modeling
+  3_process-modelling-v2:
+    name: Exercise 3 Process Modeling
   form-modelling-v2:
-    name: Exercise 4 Form Modelling
+    name: Exercise 4 Form Modeling
   run-process-v2:
     name: Exercise 5 Deploy and Run the process
   finish:
