@@ -1,0 +1,16 @@
+config:
+    renderer: markdown
+
+modules:
+  1_import-project:
+    name: Exercise 1 Import Project
+  2_data-modeling:
+    name: Exercise 2 Data Modeling
+  3_process-modeling:
+    name: Exercise 3 Process Modeling
+  form-modelling-v2:
+    name: Exercise 4 Form Modeling
+  run-process-v2:
+    name: Exercise 5 Deploy and Run the process
+  finish:
+    name: Conclusion

@@ -28,4 +28,8 @@ vars:
 modules:
   activate:
   - 1_import-project
-  
+  - 2_data-modeling
+  - 3_process-modeling
+  - form-modeling-v2
+  - run-process-v2
+  - finish
