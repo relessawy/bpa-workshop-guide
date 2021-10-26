@@ -75,8 +75,6 @@ With the project imported, we can now start building our solution starting with 
 - Be careful when selecting data types, make sure you select **float** and not **Float**
 - Once you provide the input for the last field **supplierPrice**, click **Create** instead of **Create and Continue**
 
-<center>
-
 |  Identifier   |     Label      |  Type  |
 | :-----------: | :------------: | :----: |
 |     item      |   Item Name    | String |
@@ -84,8 +82,6 @@ With the project imported, we can now start building our solution starting with 
 |    urgency    |    Urgency     | String |
 |  targetPrice  |  Target Price  | float  |
 | supplierPrice | Supplier Price | float  |
-
-</center>
 
 ---
 
@@ -96,9 +92,9 @@ With the project imported, we can now start building our solution starting with 
 ![Info]({% image_path m0_info.png %}){:align="left"}
 
 If you make a mistake, you can edit the fields by clicking into the field you want to modify and then the field properties will show on the right. In this case where the targetPrice was mistakenly created as a String, you can edit and change it to float as desired
-<br>
+
 ![EDITFIELD]({% image_path m1p6i8_EditField.png %}){:width="600px”}
-<br>
+
 
 ---
 
