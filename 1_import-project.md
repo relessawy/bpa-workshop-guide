@@ -62,4 +62,4 @@ To define and deploy a business process, we first need to have a project in whic
 ---
 
 - We are now ready to start modeling the different assets of our process, in the next exercise we will start by creating our data model
-- Go ahead and mark **Exercise 1 Import Project** as complete for your user in the google sheet.
+- Go ahead and mark **Exercise 1 Import Project** as complete for your user in the Google sheet.

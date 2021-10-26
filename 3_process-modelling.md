@@ -165,4 +165,4 @@ Remember to save your progress
 - At this point you have modelled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true
 - As part of module 2 exercises you will enrich this process to use business rules to evaluate the received offers, and approve or reject offers accordingly
 - In the next exercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead and mark Exercise 3 Process Modelling as complete for your user in the google sheet
+- Well done! Now go ahead and mark Exercise 3 Process Modeling as complete for your user in the google sheet

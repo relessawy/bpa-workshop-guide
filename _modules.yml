@@ -4,3 +4,5 @@ config:
 modules:
   1_import-project:
     name: Exercise 1 Import Project
+  2_data-modeling:
+    name: Exercise 2 Data Modeling

@@ -28,4 +28,5 @@ vars:
 modules:
   activate:
   - 1_import-project
+  - 2_data-modeling
   
