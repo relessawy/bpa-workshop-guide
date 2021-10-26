@@ -4,9 +4,9 @@ config:
 modules:
   1_import-project:
     name: Exercise 1 Import Project
-  2_data-modeling-v2:
+  2_data-modeling:
     name: Exercise 2 Data Modeling
-  3_process-modelling-v2:
+  3_process-modeling:
     name: Exercise 3 Process Modeling
   form-modelling-v2:
     name: Exercise 4 Form Modeling
