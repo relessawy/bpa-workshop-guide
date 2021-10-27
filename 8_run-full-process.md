@@ -65,71 +65,44 @@
 
 - In this step we will assume the role of the **Procurement Manager** and request an Offer.
 - Click on the **Procurement Manager** view in the top navigation menu.
-- In the **Procurement Manager** view click on **Request Offer** from the sidebar.
+- In the **Procurement Manager** view, click on **Request Offer** from the sidebar.
 
-- Click on the **Diagram** tab to open the process instance diagram and view the full process
+![RequestOffer]({% image_path NewRequestOffer.png %})
 
-![ProcessDiagram]({% image_path m2p6i5_ProcessDiagram.png %})
+- To view list of laptop requests, click on the **list** link
 
-- Just like last time, the process is in a **wait** state at the **Request Offer** task. 
-- Navigate to Menu → Track -> Task Inbox
+![ListLink]({% image_path ListLink.png %})
 
-![TaskInbox]({% image_path m2p6i6_TaskInbox.png %})
+- The **Procurement Manager** can now pick a laptop request to work on.
+- Click the **Go** button next to a request.
 
+![GoButton]({% image_path GoButton.png %})
 
-- And again the  **Request Offer** task will be waiting for you in your inbox
+- You are now in the **Request Offer** form.
+- Keep the urgency as high.
+- Enter the *Target Price** as 4000.
+- Click the "Submit Offer" button.
 
-![RequestOfferTask]({% image_path m2p6i7_RequestOfferTask.png %})
+![RequestOfferForm]({% image_path RequestOfferForm.png %})
 
-- Click on the **Request Offer** task to open its task window
+- While in the **Procurement Manager** view, click on **View Orders** in the side menu.
+- Click on the **View** button next to your Order.
+- Note that the process has progressed and is now waiting at the **Prepare Offer** step.
 
-![OpenRequestOfferTask]({% image_path m2p6i8_OpenRequestOfferTask.png %})
+![ViewOrder]({% image_path ViewOrder.png %})
 
-- Click on the **Start** button to start working on the task. 
-- Fill in the request form as follows:
-- **Item name**: MackBook Pro
-- **Urgency**: high
-- **Target Price**: 100
-- Then click the Complete button  
+---
 
-![FilledRequestOfferTask]({% image_path m2p6i9_FilledRequestOfferTask.png %})
+### 8.7 Prepare Offer
 
-- The next task **Prepare Offer** is now assigned to you in your inbox
+- In this step we will assume the role of the **Supplier** and prepare an Offer.
+- In the **Supplier** view, click on **Prepare Offer** from the sidebar.
+- Click on **list** to view offer requests
+- Click on **Claim** button next to a request
 
-![PrepareOfferTask]({% image_path m2p6i13_PrepareOfferTask.png %})
+- You are now in the **Prepare Offer** form.
+- Enter the *Supplier Price** as 4500.
+- Click the "Submit Offer" button.
 
-- Click on the Prepare Offer task in your inbox, then click the **Start** button
-- Enter 130 for SupplierPrice
-- Ignore the Supplier Name field
-- Click the **Complete** button
-
-![PrepareOfferTaskComplete]({% image_path m2p6i14_PrepareOfferTaskComplete.png %})
-
-- Navigate to Menu-> Manage ->Process Instance
-- Click on the **OrderAsset** process instance
-- In the Process Instance screen, click on the **Diagram** tab
-- Notice that because the supplier's offer was higher than target price even with the high tolerance (130 > 100*1.25), so the **Auto Approval** rule was evaluated to **false** and we progressed to the **Manual Approval** task
-
-![ProcessDesignAtManualApproval]({% image_path m2p6i15_ProcessDesignAtManualApproval.png %})
-
-- Navigate back to your Inbox (Menu -> Track -> Task Inbox), and is you might expect the **Manual Approval** task is now waiting for you
-
-![ManualApprovalTask]({% image_path m2p6i16_ManualApprovalTask.png %})
-
-- Click on the **Manual Approval** task in your inbox, then click the **Start** button
-- Check the **Approved** field 
-- Click the **Complete** button
-
-![ManualApprovalComplete]({% image_path m2p6i17_ManualApprovalComplete.png %})
-
-- Navigate to Menu-> Manage ->Process Instance
-- Like last time, in the **Filters list** to the left, click on the **Completed** state, now your completed processes are visible
-- Click on the **OrderAsset** process instance with id 2 (or highest id if you ran the process multiple times)
-- In the Process Instance screen, click on the **Diagram** tab
-- Notice that the process has reach the end event **Send to ERP**
-
-![m2p6i19_FinishProcess]({% image_path m2p6i19_FinishProcess.png %})
-
-- Run a couple more process instances with different values to test, for example, the functionality of the Automated Approval Rules.
-- Once you are done, please go ahead and mark this exercise as complete in the google sheet.
+![PrepareOfferForm]({% PrepareOfferForm.png %})
 
