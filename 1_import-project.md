@@ -40,7 +40,7 @@ To define and deploy a business process, we first need to have a project in whic
 
 ![AddProject]({% image_path import_project.png %}){:width="600px”}
 
-- In the **Repository URL** field enter the following URL: https://github.com/relessawy/procurement-process
+- In the **Repository URL** field enter the following URL: **https://github.com/relessawy/procurement-process**
 - Click on the **Import** button
 
 ---

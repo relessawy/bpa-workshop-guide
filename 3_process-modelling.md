@@ -1,6 +1,6 @@
 # Process Modeling (15 mins)
 
-- **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process
+- **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process.
 - With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
 - Our use case has three main scenarios
   - Auto-Approval
@@ -8,7 +8,11 @@
   - Rejection
 - Let’s start by exploring the process flow for the Auto-Approval scenario
 
-![Scenario1]({% image_path m1p7i1_Scenario1.png %})
+![Scenario1]({% image_path scenario1.png %})
+
+- Once the process is triggered, the first task is for the **Procurement Manager** to **Request an Offer**
+- The second task is for the supplier to **Prepare an Offer**
+- The system will then auto-approve the offer, this is where the process reaches it's end node.
 
 ---
 
@@ -20,24 +24,29 @@ For the remainder of this workshop we are going to refer to Red Hat Process Auto
 
 ### 3.1 Explore OrderAsset process
 
-- Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
-
 ![BreadcrumbNav]({% image_path m1p7i3_BreadcrumbNav.png %})
 
-- In the drop-down menu in the upper-left corner, select Process
+- Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
 
 ![AddProcessMenu]({% image_path FindProcessMenu.png %})
 
+- In the drop-down menu in the upper-left corner, select Process
 - Click on the **OrderAsset** business process to load the process in your **Process Designer**
-- This is how your process will look like when you finish this exercise, at this point it will be still missing some nodes and configurations
+
+---
 
 ![OrderAssetProcess]({% image_path OrderAssetProcess.png %})
 
-### 1.6.2 Define Process Variables
+- This is how your process will look like when you finish this exercise, at this point it will be still missing some nodes and configurations
+- In **section 3.2** we will start editing the **OrderAsset** process to configure the missing parts.
 
-- Our process will manipulate two variables throughout it’s execution
-  - The **OrderInfo** data object that we created in part 1.5.1 of this module.
-  - A variable called **approved**, that will hold the result of evaluating the supplier's offer. The result can either be true or false, this type of variable is called a boolean variable
+---
+
+### 3.2 Define Process Variables
+
+- Our process will use two variables throughout it’s execution
+  - The **OrderInfo** data object that we created in **Exercise 2: Data Modeling**.
+  - A variable called **approved**, that will hold the result of evaluating the supplier's offer. The result can either be true or false, this type of variable is called a boolean variable.
 - Open the properties editor for our process
   - Firstly click your mouse anywhere on the blank canvas of the editing screen (outside of the swimlanes). This will ensure you are editing the properties of the entire process rather than the variables of one element.
   - hover on top right pencil icon in designer
@@ -77,7 +86,13 @@ If you see something that looks like the screen below, then you will need to sel
 
 ---
 
-### 1.6.3 Create Request Offer user task
+![Save]({% image_path m0_save.png %}){:align="left"}
+
+Save your progress: Click on the **Save** button at the top of the window.
+
+---
+
+### 3.3 Create Request Offer user task
 
 - Click on the **Start Event** node, and click **Create Task**
 - Click on the task node again and using the configuration icon below it, convert this node into a **Usertask** by clicking on the **Convert Into User** mini icon
@@ -88,7 +103,7 @@ If you see something that looks like the screen below, then you will need to sel
 - With the **Request Offer** node selected Open the **Properties pane** for this node
 - Expand the **Implementation/Execution** section
 - Set the **Task Name** to: RequestOffer
-- Set the **Subject** to: Request Offer for #{orderInfo.item}
+- Copy the following text (excluding quotes): "**Request Offer for #{orderInfo.item}**" and paste it in the **Subject** field.
 - Click on the **+Add** button under **Actors** and choose **pamAdmin** (your user)
 
 ![pamAdmin]({% image_path m1p7i22_pamAdmin.png %})
@@ -131,9 +146,17 @@ Request Offer Output
 
 ![PrepareOfferSequenceFlow]({% image_path m1p7i31_PrepareOfferSequenceFlow.png %})
 
-### 1.6.4 Configure Prepare Offer user task
+---
 
-- Now that the Purchasing Manager has requested an offer, the next step in our process is that the chosen Supplier prepares an offer
+![Save]({% image_path m0_save.png %}){:align="left"}
+
+Save your progress: Click on the **Save** button at the top of the window.
+
+---
+
+### 3.4 Configure Prepare Offer user task
+
+- Now that the **Purchasing Manager** has requested an offer, the next step in our process is that the **Supplier** prepares an offer.
 - Let's configure the **Prepare Offer** user task
 
 - Similar to what we did before, click on the **Prepare Offer** task
@@ -158,11 +181,11 @@ Request Offer Output
 
 ![Save]({% image_path m0_save.png %}){:align="left"}
 
-Remember to save your progress
+Save your progress: Click on the **Save** button at the top of the window.
 
 ---
 
-- At this point you have modelled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true
+- At this point you have modeled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true
 - As part of module 2 exercises you will enrich this process to use business rules to evaluate the received offers, and approve or reject offers accordingly
 - In the next exercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead and mark Exercise 3 Process Modeling as complete for your user in the google sheet
+- Well done! Now go ahead and mark Exercise 3 Process Modeling as complete for your user in the Google sheet

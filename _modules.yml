@@ -6,3 +6,5 @@ modules:
     name: Exercise 1 Import Project
   2_data-modeling:
     name: Exercise 2 Data Modeling
+  3_process-modeling:
+    name: Exercise 3 Process Modeling

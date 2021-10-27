@@ -29,4 +29,5 @@ modules:
   activate:
   - 1_import-project
   - 2_data-modeling
+  - 3_process-modeling
   
