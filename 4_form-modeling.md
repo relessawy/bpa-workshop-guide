@@ -2,67 +2,9 @@
 
 In this section we are going to create the **Request Offer** user-task form.
 
-### 1.7.1 Create Process Start form
+### 4.1 Create Request Offer user form
 
-- Let’s start by modelling the form that triggers the process to start
-- Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project
-- click on the **Add Asset** button to the top right of the screen.
-
-![AddAsset]({% image_path AddAssetButton.png %})
-
-- In the drop-down menu in the upper-left corner, select **Form**
-- Click on the **Form** tile
-- In the **Create new Form** dialog, provide the following input
-  - Form: Leave empty, this will be auto populated when you finish select the business process
-  - Package: Leave default value
-  - Keep the Business Process radio box selected
-  - Select Process: select **OrderAsset** from the drop down list
-  - Select Form: select **Start Process Form**
-  - Do not change the Form name that is generated for you
-  - Click the **+Ok** button
-
-![StartForm]({% image_path m2p3i9_StartForm.png %})
-- In the **Form Modeller** expand the **Form Controls** sections to the left
-
-![HTMLControl]({% image_path m2p3i16_HTMLControl.png %})
-
-- Drag an HTML control to the canvas
-- Click on the **Insert Image** icon
-
-![InsertImage]({% image_path m2p3i10_InsertImage.png %})
-- Enter the following URL in the **Image:** field
-`https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg`
-
-- **Alignment**: Default
-- Remove the text "Add your HTML here..." at the bottom
-- Click the **OK** button
-
-![ImageDialog]({% image_path m2p3i11_ImageDialog.png %})
-
-- Drag another HTML control to the canvas, in the white area below the image HTML you just created
-- Type "To start the procurement process click on the Submit button"
-- Highlight the text
-- Modify your text format to H3 + Bold
-- Click the **OK** button
-
-![TextDialog]({% image_path m2p3i12_TextDialog.png %})
-
----
-![Save]({% image_path m0_save.png %}){:align="left"}
-
-Remember to save your form.
----
-
----
-
-- Your form should now look like this screenshot
-
-![FinishedStartForm]({% image_path m2p3i13_FinishedStartForm.png %})
-
-
-### 1.7.2 Create Request Offer user form
-
-- Now let's model the form that the **Purchasing Manager** will use to request an asset e.g. laptop
+- Let's model the form that the **Purchasing Manager** will use to request an asset e.g. laptop
 - Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project
 - click on the **Add Asset** button to the top right of the screen.
 
@@ -123,34 +65,11 @@ Remember to save your form.
 
 ---
 
-- Save your form
-- Navigate back to the **procurement-process** project
-- click on the **Add Asset** button to the top right of the screen.
-- In the drop-down menu in the upper-left corner, select **Form**
-- Click on the **Form** tile
-- Provide the following input
-  - Form: Leave empty, this will be auto populated
-  - Package: Leave default value
-  - Keep the Business Process radio box selected
-  - Select Process: select **OrderAsset** from the drop down list
-  - Select Form: select **Task Form for Request Offer**
-  - Click the **+Ok** button
-
-![RequestFormDialog]({% image_path RequestFormDialog.png %})
-
-- In the **Form Modeller** view, expand the Model Fields list to the left of the **Form Modeller**
-- Drag the **orderinfo_in** component to the form
-- In the Field Properties dialog, change the label to be **Request Order Form**
-- In the **Nested Form** drop down list, select **OrderForm-RequestAsset**
-- Click the **+Ok** button
-
----
 ![Save]({% image_path m0_save.png %}){:align="left"}
 
-Remember to save your form.
----
+Save your progress: Click on the **Save** button at the top of the window.
 
 ---
 
-- Now mark Exercise 4 Form Modelling as complete for your user in the google sheet.
+- Now mark Exercise 4 Form Modeling as complete for your user in the Google sheet.
 - In the next exercise we will get to see our process in action as we test the first use case

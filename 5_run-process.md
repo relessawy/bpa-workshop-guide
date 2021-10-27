@@ -1,6 +1,6 @@
 # Deploy and Run the Process (5 mins)
 
-### 1.8.1 Deploy the process
+### 5.1 Deploy the process
 
 - With our process, data model and forms ready, we can now package our project and deploy it on the Execution Server. To do this:
 - Go back to our project’s Library View, by clicking on the **procurement-process** link in the breadcrumb navigation in the upper-left of the screen.
@@ -12,7 +12,7 @@
 
 ![SuccessMsg]({% image_path m2p5_SuccessMsg.png %})
 
-### 1.8.2 Run the process
+### 5.2 Run the process
 
 - In this section, you will execute the process deployed on the Process Execution Server via the Business Central workbench
 - Navigate to Menu → Manage → Process Definitions. 

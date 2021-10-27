@@ -31,4 +31,5 @@ modules:
   - 2_data-modeling
   - 3_process-modeling
   - 4_form-modeling
+  - 5_run-process
   

@@ -3,10 +3,12 @@ config:
 
 modules:
   1_import-project:
-    name: Exercise 1 Import Project
+    name: Import Project
   2_data-modeling:
-    name: Exercise 2 Data Modeling
+    name: Data Modeling
   3_process-modeling:
-    name: Exercise 3 Process Modeling
+    name: Process Modeling
   4_form-modeling:
-    name: Exercise 4 Form Modeling
+    name: Form Modeling
+  5_run-process:
+    name: Run Process
