@@ -96,16 +96,16 @@ If you see something that looks like the screen below, then you will need to sel
 
 ![Save]({% image_path m0_save.png %}){:align="left"}
 
-Save your progress: Click on the **Save** button at the top of the window. Note: It is safe to ignore warnings about missing outgoing connections for now as we didn't configure this part yet.
+Save your progress: Click on the **Save** button at the top of the window. Note: It is safe to ignore warnings about missing connections for now as we didn't configure them yet.
 
 ---
 
 ### 3.3 Create Request Offer user task
 
-1 Click on the **Start Event** node, and click **Create Task** in the mini-icons (step 1 in the following diagram).
-2 Click on the newly created **Task** node and using the **configuration icon** below it, convert this node into a **User-task** by clicking on the **Convert Into User** mini icon (step 2 in the following diagram).
-3 Double Click on the node to give it the name **Request Offer**.
-4 Your node will now like step 4 in the following diagram.
+- Click on the **Start Event** node, and click **Create Task** in the mini-icons (step 1 in the following diagram).
+- Click on the newly created **Task** node and using the **configuration icon** below it, convert this node into a **User-task** by clicking on the **Convert Into User** mini icon (step 2 in the following diagram).
+- Double Click on the node to give it the name **Request Offer**.
+- Your node will now like step 4 in the following diagram.
 
 ![RequestOfferTask]({% image_path RequestOfferTask.png %})
 
@@ -125,13 +125,12 @@ Save your progress: Click on the **Save** button at the top of the window. Note:
 
 ![Save]({% image_path m0_save.png %}){:align="left"}
 
-Save your progress: Click on the **Save** button at the top of the window.
+Save your progress: Click on the **Save** button at the top of the window. Note: It is safe to ignore warnings about missing connections for now as we didn't configure them yet.
 
 ---
 
-
-- The next step is to pass our process variable **orderInfo** to the **Request Offer** task (task input), this will hold the information that a user will provide in the **Request Offer** task and then return it to the process (task output) to be available for the next steps in the flow
-- Click on the pencil icon under **Assignments**
+- The next step is to pass our process variable **orderInfo** to the **Request Offer** task (task input), this will hold the information that the **Procurement Manager** will provide in the **Request Offer** task and then return it to the process (task output) to be available for the next steps in the flow.
+- With the **Properties** pane for the **Request Offer** node open, click on the pencil icon under **Assignments**.
 
 ![Assignments]({% image_path m1p6i70_assignments.png %})
 
@@ -145,10 +144,9 @@ Request Offer Input
 | :----------: | :-------: | :-------: |
 | orderInfo_in | OrderInfo | orderInfo |
 
-- You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. You are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
-- Now click the **+Add** button next to **Data Outputs and Assignments**
-- Like you did before provide the input as follows and then click **OK**
-- It is very important that the name in the input assignments is the same as the name in the output assignments i.e. orderInfo_in
+- You will only need to provide the Name, the Data Type and Source are selected from dropdown menus. Here you are selecting the OrderInfo data type and the orderInfo process variable that we created in previous steps.
+- Now click the **+Add** button next to **Data Outputs and Assignments**.
+- Like you did before provide the input as follows and then click **OK**.
 
 Request Offer Output
 
@@ -156,9 +154,23 @@ Request Offer Output
 | :----------: | :-------: | :-------: |
 | orderInfo_in | OrderInfo | orderInfo |
 
+- It is very important that the name in the input assignments is the same as the name in the output assignments i.e. orderInfo_in.
 - Your **RequestOffer Data I/O** should look something like this:
 
 ![RequestOfferAssignments]({% image_path m1p7i28_RequestOfferAssignments.png %})
+
+---
+
+![Save]({% image_path m0_save.png %}){:align="left"}
+
+Save your progress: Click on the **Save** button at the top of the window. Note: It is safe to ignore warnings about missing connections for now as we didn't configure them yet.
+
+---
+
+- Decrease your Process Designer view (Zoom Out), to about 70%.
+- It is important that you can see the full process for the next step to work smoothly
+
+![ZoomOut]({% image_path ZoomOut.png %})
 
 - Click on the **Request Offer** task and click on the mini icon **Create Sequence Flow**
   ![CreateSequenceFlow]({% image_path create_squence_flow.png %})
@@ -207,7 +219,7 @@ Save your progress: Click on the **Save** button at the top of the window.
 
 ---
 
-- At this point you have modeled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true
-- As part of module 2 exercises you will enrich this process to use business rules to evaluate the received offers, and approve or reject offers accordingly
-- In the next exercise you will start creating the forms that allow a use to interact with a task in the process
-- Well done! Now go ahead and mark Exercise 3 Process Modeling as complete for your user in the Google sheet
+- At this point you have modeled the process for a happy scenario where the asset will always get approved, since the "Auto Approval" task explicitly sets the variable "approved" to true.
+- As part of Exercise 6 **Rule Authoring** you will enrich this process to use business rules to evaluate the received offers and approve or reject offers accordingly.
+- In the next exercise you will start creating the forms that allow users to interact with a task in the process.
+- Well done! Now go ahead and mark Exercise 3 Process Modeling as complete for your user in the Google sheet.

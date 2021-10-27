@@ -30,4 +30,5 @@ modules:
   - 1_import-project
   - 2_data-modeling
   - 3_process-modeling
+  - 4_form-modeling
   

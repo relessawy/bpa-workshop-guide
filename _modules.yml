@@ -8,3 +8,5 @@ modules:
     name: Exercise 2 Data Modeling
   3_process-modeling:
     name: Exercise 3 Process Modeling
+  4_form-modeling:
+    name: Exercise 4 Form Modeling

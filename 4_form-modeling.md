@@ -1,6 +1,6 @@
-# Form Modelling (15 mins)
+# Form Modeling (10 mins)
 
-In this section we are going to create the **Process Start** and **Request Offer** user-task forms.
+In this section we are going to create the **Request Offer** user-task form.
 
 ### 1.7.1 Create Process Start form
 
