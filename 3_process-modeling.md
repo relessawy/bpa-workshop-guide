@@ -8,7 +8,7 @@
   - Rejection
 - Let’s start by exploring the process flow for the Auto-Approval scenario
 
-![Scenario1]({% image_path scenario1.png %})
+![Scenario1]({% image_path scenario1.png %}){width:200px}
 
 - Once the process is triggered, the first task is for the **Procurement Manager** to **Request an Offer**
 - The second task is for the supplier to **Prepare an Offer**
@@ -16,7 +16,7 @@
 
 ---
 
-![Info]({% image_path m0_info.png %}){:align="left"}
+![Info]({% image_path m0_info.png %}){:align="left"; width:30px}
 
 For the remainder of this workshop we are going to refer to Red Hat Process Automation Manager by it’s short name **RH PAM**.
 
