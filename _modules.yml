@@ -14,3 +14,7 @@ modules:
     name: Run Process
   6_rule-authoring:
     name: Rule Authoring
+  7_test-scenarios:
+    name: Test Scenarios
+  8_run-full-process:
+    name: Run from an external UI

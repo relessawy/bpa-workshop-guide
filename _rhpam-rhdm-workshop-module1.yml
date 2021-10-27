@@ -33,4 +33,6 @@ modules:
   - 4_form-modeling
   - 5_run-process
   - 6_rule-authoring
+  - 7_test-scenarios
+  - 8_run-full-process
   
