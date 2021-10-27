@@ -30,28 +30,30 @@ To define and deploy a business process, we first need to have a project in whic
 
 - You’ve entered **MySpace**, initially this is empty
 - Right now there are no projects in your space. You can either
-  1. create a new project
-  2. import an existing one
-  3. or try one of the ready samples
+  1. Create a new project
+  2. Import an existing one
+  3. Or try one of the ready samples
 
 ---
 
-- Let’s go ahead and import a project, click on the **Import Project** button
+- Let’s go ahead and import a project, click on the **Import Project** button.
+- You will now see the following **Import Project** dialog.
 
 ![AddProject]({% image_path import_project.png %}){:width="600px”}
 
-- In the **Repository URL** field enter the following URL: **https://github.com/relessawy/procurement-process**
-- Click on the **Import** button
+- Copy the In the the following URL: **https://github.com/relessawy/procurement-process** and paste it in the **Repository URL** field.
+- Click on the **Import** button.
+- You now see the **Import Projects** view.
 
 ---
 
 ![ImportProject]({% image_path ImportProject.png %}){:width="600px”}
 
-- Now click on the **procurement-process** tile to select it, then click on the **Ok** button to the top right
+- Now click on the **procurement-process** tile to select it, then click on the **Ok** button to the top right.
 
 ---
 
-- It may take a few minutes for the project to fully load, you will see this screen as **RH PAM** organizes the imported assets
+- It may take a few minutes for the project to fully load, you will see this screen as **RH PAM** organizes the imported assets.
 
 ![IndexingProject]({% image_path IndexingProject.png %}){:width="600px”}
 
@@ -61,5 +63,5 @@ To define and deploy a business process, we first need to have a project in whic
 
 ---
 
-- We are now ready to start modeling the different assets of our process, in the next exercise we will start by creating our data model
+- We are now ready to start modeling the different assets of our process, in the next exercise we will start by creating our data model.
 - Go ahead and mark **Exercise 1 Import Project** as complete for your user in the Google sheet.
