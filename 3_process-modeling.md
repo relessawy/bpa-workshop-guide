@@ -8,7 +8,7 @@
   - Rejection
 - Let’s start by exploring the process flow for the Auto-Approval scenario
 
-![Scenario1]({% image_path scenario1.png %} =100x100)
+![Scenario1]({% image_path scenario1.png %})
 
 - Once the process is triggered, the first task is for the **Procurement Manager** to **Request an Offer**
 - The second task is for the supplier to **Prepare an Offer**
@@ -24,14 +24,21 @@ For the remainder of this workshop we are going to refer to Red Hat Process Auto
 
 ### 3.1 Explore OrderAsset process
 
+- Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view.
+
 ![BreadcrumbNav]({% image_path m1p7i3_BreadcrumbNav.png %})
 
-- Use the **breadcrumb navigator** at the top-left of the screen to navigate back to our **procurement-process** project view
+- In the drop-down menu in the upper-left corner, select **Process**.
 
 ![AddProcessMenu]({% image_path FindProcessMenu.png %})
 
-- In the drop-down menu in the upper-left corner, select Process
-- Click on the **OrderAsset** business process to load the process in your **Process Designer**
+- Click on the **OrderAsset** business process to load the process in your **Process Designer**.
+
+![ClickOrderAsset]({% image_path ClickOrderAsset.png %})
+
+- The process will load in the Prcess Modeler view and will look like the following image.
+
+![IncompleteProcess]({% image_path IncompleteProcessModel.png %})
 
 ---
 
