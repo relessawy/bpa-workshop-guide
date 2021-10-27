@@ -39,3 +39,55 @@
 ![HomePage]({% image_path HomePage.png %})
 
 ---
+
+### 8.5 Request Laptop
+
+- In this step we will assume the role of the **Employee** and request a laptop.
+- Click on the **Employee** view in the top navigation menu.
+- In the **Employee** view click on **Request Laptop** from the sidebar.
+
+![EmployeeHome]({% image_path EmployeeHome.png %})
+
+- Select a laptop model from the carousel, then click the **Request Laptop** button.
+
+![RequestLaptop]({% image_path NewRequestLaptop.png %})
+
+- Go back to **Business Central**
+- Navigate to Menu → Manage → Process Instances.
+- Note that a new process is created and as you can expect it is waiting at the **Reuest Offer** task node
+
+![NewProcess]({% image_path NewProcess.png %})
+
+---
+
+### 8.6 Request Offer
+
+- In this step we will assume the role of the **Procurement Manager** and request an Offer.
+- Click on the **Procurement Manager** view in the top navigation menu.
+- In the **Procurement Manager** view, click on **Request Offer** from the sidebar.
+
+![NewRequestOffer]({% image_path NewRequestOffer.png %})
+
+- To view list of laptop requests, click on the **list** link
+
+![ListLink]({% image_path ListLink.png %})
+
+- The **Procurement Manager** can now pick a laptop request to work on.
+- Click the **Go** button next to a request.
+
+![GoButton]({% image_path GoButton.png %})
+
+- You are now in the **Request Offer** form.
+- Keep the urgency as high.
+- Enter the **Target Price** as 4000.
+- Click the **Submit Offer** button.
+
+![RequestOfferForm]({% image_path RequestOfferForm.png %})
+
+- While in the **Procurement Manager** view, click on **View Orders** in the side menu.
+- Click on the **View** button next to your Order.
+- Note that the process has progressed and is now waiting at the **Prepare Offer** step.
+
+![ViewOrder]({% image_path ViewOrder.png %})
+
+---
