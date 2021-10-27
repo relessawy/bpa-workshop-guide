@@ -1,4 +1,3 @@
-
 # Deploy and Run the full process (15 mins)
 
 ### 8.1 Create new Space
@@ -16,7 +15,7 @@
 - Click the **Import Project** button.
 - In the **Import Project** Dialog, provide the URL: **https://github.com/relessawy/procurement-process-web**.
 - Click on the **Import** button.
-- Now click on the **procurement-process**  tile to select it, then click on the **Ok** button to the top right.
+- Now click on the **procurement-process** tile to select it, then click on the **Ok** button to the top right.
 
 ---
 
@@ -80,7 +79,7 @@
 
 - You are now in the **Request Offer** form.
 - Keep the urgency as high.
-- Enter the *Target Price** as 4000.
+- Enter the \*Target Price\*\* as 4000.
 - Click the "Submit Offer" button.
 
 ![RequestOfferForm]({% image_path RequestOfferForm.png %})
@@ -101,8 +100,7 @@
 - Click on **Claim** button next to a request
 
 - You are now in the **Prepare Offer** form.
-- Enter the *Supplier Price** as 4500.
+- Enter the \*Supplier Price\*\* as 4500.
 - Click the "Submit Offer" button.
 
 ![PrepareOfferForm]({% PrepareOfferForm.png %})
-
