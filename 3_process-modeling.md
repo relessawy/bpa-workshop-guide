@@ -32,20 +32,20 @@ For the remainder of this workshop we are going to refer to Red Hat Process Auto
 
 ![AddProcessMenu]({% image_path FindProcessMenu.png %})
 
-- Click on the **OrderAsset** business process to load the process in your **Process Designer**.
+- Click on the **OrderAsset** business process to load the process.
 
 ![ClickOrderAsset]({% image_path ClickOrderAsset.png %})
 
-- The process will load in the Prcess Modeler view and will look like the following image.
+- The process will load in the **Prcess Designer** view and will look like the following image.
 
 ![IncompleteProcess]({% image_path IncompleteProcessModel.png %})
 
 ---
 
-![OrderAssetProcess]({% image_path OrderAssetProcess.png %})
-
-- This is how your process will look like when you finish this exercise, at this point it will be still missing some nodes and configurations
+- This is how your process will look like when you finish this exercise, at this point it will be still missing some nodes and configurations.
 - In **section 3.2** we will start editing the **OrderAsset** process to configure the missing parts.
+
+![OrderAssetProcess]({% image_path OrderAssetProcess.png %})
 
 ---
 
@@ -56,12 +56,13 @@ For the remainder of this workshop we are going to refer to Red Hat Process Auto
   - A variable called **approved**, that will hold the result of evaluating the supplier's offer. The result can either be true or false, this type of variable is called a boolean variable.
 - Open the properties editor for our process
   - Firstly click your mouse anywhere on the blank canvas of the editing screen (outside of the swimlanes). This will ensure you are editing the properties of the entire process rather than the variables of one element.
-  - hover on top right pencil icon in designer
-  - click to open the **Properties pane** on the right
+  - hover on the pencil icon to the top right of the **Process Designer** window, this is called the **Properties** pane.
+  - click to open the **Properties** pane.
 
 ![PropertiesPane]({% image_path PropertiesPane.png %})
 
-- Scroll down in the property panel on the right side of the screen, until you see the section **Process Data**.
+- Scroll down in the **Properties** pane, until you see the section called **Process Data**.
+
   ![ProcessVariables]({% image_path m1p7i10_ProcessVariables.png %})
 
 ---
@@ -95,25 +96,39 @@ If you see something that looks like the screen below, then you will need to sel
 
 ![Save]({% image_path m0_save.png %}){:align="left"}
 
-Save your progress: Click on the **Save** button at the top of the window.
+Save your progress: Click on the **Save** button at the top of the window. Note: It is safe to ignore warnings about missing outgoing connections for now as we didn't configure this part yet.
 
 ---
 
 ### 3.3 Create Request Offer user task
 
-- Click on the **Start Event** node, and click **Create Task**
-- Click on the task node again and using the configuration icon below it, convert this node into a **Usertask** by clicking on the **Convert Into User** mini icon
-- Double Click on the node to give it the name **Request Offer**
+1 Click on the **Start Event** node, and click **Create Task** in the mini-icons (step 1 in the following diagram).
+2 Click on the newly created **Task** node and using the **configuration icon** below it, convert this node into a **User-task** by clicking on the **Convert Into User** mini icon (step 2 in the following diagram).
+3 Double Click on the node to give it the name **Request Offer**.
+4 Your node will now like step 4 in the following diagram.
 
-![RequestOfferTask]({% image_path m1p7i21_RequestOfferTask.png %})
+![RequestOfferTask]({% image_path RequestOfferTask.png %})
 
-- With the **Request Offer** node selected Open the **Properties pane** for this node
-- Expand the **Implementation/Execution** section
-- Set the **Task Name** to: RequestOffer
+---
+
+- With the **Request Offer** node selected Open the **Properties pane** for this node.
+- Expand the **Implementation/Execution** section.
+- Set the **Task Name** to: RequestOffer.
 - Copy the following text (excluding quotes): "**Request Offer for #{orderInfo.item}**" and paste it in the **Subject** field.
-- Click on the **+Add** button under **Actors** and choose **pamAdmin** (your user)
+- Click on the **+Add** button under **Actors**.
+- Click on **New** to create a new user.
+- Enter **pamAdmin** as the user name, then click on the blue checkmark.
 
-![pamAdmin]({% image_path m1p7i22_pamAdmin.png %})
+![pamAdmin]({% image_path CreatePamAdmin.png %})
+
+---
+
+![Save]({% image_path m0_save.png %}){:align="left"}
+
+Save your progress: Click on the **Save** button at the top of the window.
+
+---
+
 
 - The next step is to pass our process variable **orderInfo** to the **Request Offer** task (task input), this will hold the information that a user will provide in the **Request Offer** task and then return it to the process (task output) to be available for the next steps in the flow
 - Click on the pencil icon under **Assignments**
