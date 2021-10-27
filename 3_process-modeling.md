@@ -1,8 +1,8 @@
 # Process Modeling (15 mins)
 
 - **Red Hat Process Automation Manager (RH PAM)** uses the [BPMN2](https://www.omg.org/bpmn/) standard to define the structure and semantics of the process.
-- With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions
-- Our use case has three main scenarios
+- With the data model defined, we can now sketch out the main flow of the process, the actors, the user task nodes and the required automation decisions.
+- Our use case has three main scenarios:
   - Auto-Approval
   - Manual-Approval
   - Rejection
@@ -104,14 +104,14 @@ Save your progress: Click on the **Save** button at the top of the window. Note:
 
 - Click on the **Start Event** node, and click **Create Task** in the mini-icons (step 1 in the following diagram).
 - Click on the newly created **Task** node and using the **configuration icon** below it, convert this node into a **User-task** by clicking on the **Convert Into User** mini icon (step 2 in the following diagram).
-- Double Click on the node to give it the name **Request Offer**.
+- Double Click on the **Task** node to give it the name **Request Offer**.
 - Your node will now like step 4 in the following diagram.
 
 ![RequestOfferTask]({% image_path RequestOfferTask.png %})
 
 ---
 
-- With the **Request Offer** node selected Open the **Properties pane** for this node.
+- With the **Request Offer** node selected, open the **Properties pane** for this node.
 - Expand the **Implementation/Execution** section.
 - Set the **Task Name** to: RequestOffer.
 - Copy the following text (excluding quotes): "**Request Offer for #{orderInfo.item}**" and paste it in the **Subject** field.

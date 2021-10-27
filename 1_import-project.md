@@ -18,17 +18,17 @@ To define and deploy a business process, we first need to have a project in whic
 
 ---
 
-- You now see a view of the **Spaces** created for your organization
+- You now see a view of the **Spaces** created for your organization.
 
 ![MySpace]({% image_path m1p5i2_MySpace.png %}){:width="600px”}
 
-- Click on **MySpace** to enter the default space
+- Click on **MySpace** to enter the default space.
 
 ---
 
 ![AddProject]({% image_path MySpace.png %}){:width="600px”}
 
-- You’ve entered **MySpace**, initially this is empty
+- You’ve entered **MySpace**, initially this is empty.
 - Right now there are no projects in your space. You can either
   1. Create a new project
   2. Import an existing one

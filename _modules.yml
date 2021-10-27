@@ -12,3 +12,5 @@ modules:
     name: Form Modeling
   5_run-process:
     name: Run Process
+  6_rule-authoring:
+    name: Rule Authoring

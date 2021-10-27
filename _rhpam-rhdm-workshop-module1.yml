@@ -32,4 +32,5 @@ modules:
   - 3_process-modeling
   - 4_form-modeling
   - 5_run-process
+  - 6_rule-authoring
   
