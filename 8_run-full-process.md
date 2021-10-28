@@ -85,3 +85,18 @@
 - Note that the process has progressed and is now waiting at the **Prepare Offer** step.
 
 ![ViewOrder]({% image_path ViewOrder.png %})
+
+### 8.7 Prepare Offer
+
+- In this step we will assume the role of the **Supplier** and prepare an Offer.
+- In the **Supplier** view, click on **Prepare Offer** from the sidebar.
+- Click the **Go** button next to a request.
+
+- You are now in the **Prepare Offer** form.
+- Enter the **Supplier Price** as 6000.
+- Click the **Submit Offer**"** button.
+
+
+- You are now in the **Orders** view
+- Click on the **View** button next to your Order.
+- Note that the process has progressed and is now waiting at the **Manual Approval** step.

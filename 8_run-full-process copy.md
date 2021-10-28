@@ -110,7 +110,7 @@
 
 ---
 
-### 8.7 Manual Approval
+### 8.8 Manual Approval
 
 - In this step we will assume the role of the **Procurement Manager** and manually approve an Offer.
 - Click on the **Procurement Manager** view in the top navigation menu.
