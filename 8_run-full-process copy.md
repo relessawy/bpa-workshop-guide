@@ -96,11 +96,24 @@
 
 - In this step we will assume the role of the **Supplier** and prepare an Offer.
 - In the **Supplier** view, click on **Prepare Offer** from the sidebar.
-- Click on **list** to view offer requests
-- Click on **Claim** button next to a request
+- Click the **Go** button next to a request.
 
 - You are now in the **Prepare Offer** form.
-- Enter the **Supplier Price** as 4500.
-- Click the "Submit Offer" button.
+- Enter the **Supplier Price** as 6000.
+- Click the **Submit Offer**"** button.
 
 ![PrepareOfferForm]({% PrepareOfferForm.png %})
+
+- You are now in the **Orders** view
+- Click on the **View** button next to your Order.
+- Note that the process has progressed and is now waiting at the **Manual Approval** step.
+
+---
+
+### 8.7 Manual Approval
+
+- In this step we will assume the role of the **Procurement Manager** and manually approve an Offer.
+- Click on the **Procurement Manager** view in the top navigation menu.
+- In the **Procurement Manager** view, click on **Approve Offers** from the sidebar
+- Choose whether to approve the offer or not, them click the **Approve Order** button.
+- You can now check your process status from **Business Central**
