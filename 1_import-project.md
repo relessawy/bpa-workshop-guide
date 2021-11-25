@@ -14,7 +14,7 @@ To define and deploy a business process, we first need to have a project in whic
 
 ![Business Central]({% image_path m1p5i1_businesscentral.png %}){:width="600px”}
 
-- Right now we want to start designing our process, so click on **Design** to navigate to the **Design perspective**
+- Right now we want to start creating our project, so click on **Design** to navigate to the **Design perspective**
 
 ---
 
@@ -29,7 +29,7 @@ To define and deploy a business process, we first need to have a project in whic
 ![AddProject]({% image_path MySpace.png %}){:width="600px”}
 
 - You’ve entered **MySpace**, initially this is empty.
-- Right now there are no projects in your space. You can either
+- Right now there are no projects in your space, you can:
   1. Create a new project
   2. Import an existing one
   3. Or try one of the ready samples

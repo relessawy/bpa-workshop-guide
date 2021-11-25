@@ -35,7 +35,7 @@ With the project imported, we can now start building our solution starting with 
 ---
 
 - Fill in the data object details as follows and then click the **+OK** button.
-  - **Name**: OrderInfo.
+  - **Name**: OrderInfo
   - **Package**: Leave the default value.
   - **JPA Persistable**: Leave unchecked.
 
@@ -49,7 +49,7 @@ With the project imported, we can now start building our solution starting with 
 
 ![DataModeller]({% image_path m1p6i4_DataModeller.png %}){:width="600px”}
 
-- In the **general properties** input the label ‘Order Info’.
+- In the **general properties** input the label **Order Info**
 
 ![AddLabel]({% image_path m1p6i5_AddLabel.png %}){:width="600px”}
 
@@ -77,7 +77,6 @@ With the project imported, we can now start building our solution starting with 
 
 |  Identifier   |     Label      |  Type  |
 | :-----------: | :------------: | :----: |
-|     item      |   Item Name    | String |
 |   supplier    | Supplier Name  | String |
 |    urgency    |    Urgency     | String |
 |  targetPrice  |  Target Price  | float  |

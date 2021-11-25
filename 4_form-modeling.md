@@ -31,8 +31,8 @@
 - Change the properties of the **item** field as follows:
   - Field Type: select **ListBox** from drop down list.
   - Label: Leave default value.
-  - Click the **+New Instance** button, provide the input **macbook pro** for both the **Value** and **Text** fields, then press the **Accept** button.
-  - Once again click the **+New Instance** button, provide the input **microsoft surface** for both the **Value** and **Text** fields, then press the **Accept** button.
+  - Click the **+New Instance** button, provide the input **MacBook Pro** for both the **Value** and **Text** fields, then press the **Accept** button.
+  - Follow the same steps to add two inputs **Surface Pro** and **HP Pavilion**.
   - Check the **Required** checkbox.
   - **Do not** check the **Read Only** checkbox.
   - Help Message: **List of assets to request**.

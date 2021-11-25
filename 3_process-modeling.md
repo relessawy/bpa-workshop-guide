@@ -105,7 +105,7 @@ Save your progress: Click on the **Save** button at the top of the window. Note:
 - Click on the **Start Event** node, and click **Create Task** in the mini-icons (step 1 in the following diagram).
 - Click on the newly created **Task** node and using the **configuration icon** below it, convert this node into a **User-task** by clicking on the **Convert Into User** mini icon (step 2 in the following diagram).
 - Double Click on the **Task** node to give it the name **Request Offer**.
-- Your node will now like step 4 in the following diagram.
+- Your node will now look like step 4 in the following diagram.
 
 ![RequestOfferTask]({% image_path RequestOfferTask.png %})
 
@@ -113,9 +113,19 @@ Save your progress: Click on the **Save** button at the top of the window. Note:
 
 - With the **Request Offer** node selected, open the **Properties pane** for this node.
 - Expand the **Implementation/Execution** section.
-- Set the **Task Name** to: RequestOffer.
+- Set the **Task Name** to: RequestOffer
 - Copy the following text (excluding quotes): "**Request Offer for #{orderInfo.item}**" and paste it in the **Subject** field.
 - Click on the **+Add** button under **Actors**.
+- Select pamAdmin
+
+
+---
+
+![Info]({% image_path m0_info.png %}){:align="left"}
+
+If the pamAdmin does not exist, you will need to create using the following steps:
+
+- After clicking the **+Add** button under **Actors**.
 - Click on **New** to create a new user.
 - Enter **pamAdmin** as the user name, then click on the blue checkmark.
 

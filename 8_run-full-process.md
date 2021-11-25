@@ -76,13 +76,13 @@
 - You are now in the **Request Offer** form.
 - Keep the urgency as high.
 - Enter the **Target Price** as 4000.
-- Click the **Submit Offer** button.
+- Click the **Submit** button.
 
 ![RequestOfferForm]({% image_path RequestOfferForm.png %})
 
 - You are now in the **Orders** view
 - Click on the **View** button next to your Order.
-- Note that the process has progressed and is now waiting at the **Prepare Offer** step.
+- As expected if you go back to Business Central you will find the process waiting at t the **Prepare Offer** step.
 
 ![ViewOrder]({% image_path ViewOrder.png %})
 
@@ -94,7 +94,7 @@
 
 - You are now in the **Prepare Offer** form.
 - Enter the **Supplier Price** as 6000.
-- Click the **Submit Offer**"** button.
+- Click the **Submit Offer** button.
 
 - You are now in the **Orders** view
 - Click on the **View** button next to your Order.

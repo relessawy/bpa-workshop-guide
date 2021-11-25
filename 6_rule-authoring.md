@@ -20,7 +20,7 @@ In this section we will implement the automatic approval rule in the form of a D
 
 - You now see the **DMN Editor** view.
 - In the **DMN Editor**, open the **Properties** pane on the right-side of the screen.
-- Copy the URL **http://www.redhat.com/pam-workshop/procurement-process-dmn** to the **Namespace**.
+- Copy the URL **http://www.redhat.com/pam-workshop/procurement-process-dmn** to the **Namespace** field.
 
 ![NameSpace]({% image_path m2p1i3_NameSpace.png %})
 
@@ -47,7 +47,7 @@ Save your progress: Click on the **Save** button at the top of the window.
 ![AddCustomerDataType]({% image_path m2p1i5_AddCustomerDataType.png %})
 
 - In the editor provide the following:
-  - **Name**: urgency.
+  - **Name**: urgency
   - **Type**: string (from the drop down list).
 
 ![UrgencyType]({% image_path m2p1i6_UrgencyType.png %})
@@ -99,7 +99,7 @@ Save your progress: Click on the **Save** button at the top of the window.
 
 ![DMNInputMenu]({% image_path m2p1i60_DMNInputData.png %})
 
-- Double click on the DMN input, and give it the name **Order Information**.
+- Double click on the DMN input, and give it the name **Order Information**
 
 ---
 
@@ -112,12 +112,6 @@ Unlike many traditional expression languages, Friendly Enough Expression Languag
 - Open **Diagram Properties** for this input, click the **Data Type** drop down list and select the new data type we just imported: **OrderInfo**.
 
 ![OrderInfoInput]({% image_path m2p1i12_OrderInfoInput.png %})
-
----
-
-![Info]({% image_path m0_info.png %}){:align="left"}
-
-You can change the background and font for each element in DMN, using the Background details and Font settings sections under the Properties pane. This only enhances the visibility of the model, but has no impact on the behaviour of the model.
 
 ---
 
@@ -140,7 +134,7 @@ A Business Knowledge Model element (BKM) represents a reusable piece of decision
 ---
 
 - From the left menu, drag a **DMN Business Knowledge Model** element to the canvas.
-- Double clcik on it to give it the name **Price Tolerance**.
+- Double click on it to give it the name **Price Tolerance**.
 
 ![BKM]({% image_path m2p1i13_BKM.png %})
 
@@ -148,7 +142,7 @@ A Business Knowledge Model element (BKM) represents a reusable piece of decision
 
 ![BKMEdit]({% image_path m2p1i14_BKMEdit.png %})
 
-- You now see the boxed expression of this node, feel free to resize it to your. convenience
+- You now see the boxed expression of this node, feel free to resize it to your convenience
 
 ![PriceToleranceBoxedEx]({% image_path m2p1i15_PriceToleranceBoxedEx.png %})
 

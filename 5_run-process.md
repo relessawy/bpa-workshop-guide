@@ -38,7 +38,7 @@
 ![ProcessInstance]({% image_path m2p6i4_ProcessInstance.png %})
 
 - Click on the **Diagram** tab to open the process instance diagram
-- The process instance **Diagram**shows the current state of the process, which path was taken, and what is the current active step.
+- The process instance **Diagram** shows the current state of the process, which path was taken, and what is the current active step.
 - Note that the process is in a **wait** state at the **Request Offer** task.
 
 ![ProcessDiagram]({% image_path ProcessDiagram.png %})
@@ -61,7 +61,7 @@
 
 - Click on the **Start** button to start working on the task.
 - Fill in the request form as follows:
-  - **Item name**: macbook pro
+  - **Item name**: MacBook pro
   - **Urgency**: high
   - **Target Price**: 4000
 - Then click the **Complete** button
